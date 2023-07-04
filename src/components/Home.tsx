@@ -40,7 +40,7 @@ const Home = () => {
             Notification of
             <br /> Payments
           </div>
-          <div className="mt-[30px] text-[18px] xl:mt-[40px] xl:text-[20px] -ml-[72px]  font-[450] leading-[26px]">
+          <div className="mt-[30px] text-[18px] xl:mt-[40px] xl:text-[20px] xl:-ml-[72px]  font-[450] leading-[26px]">
             Now you no longer have to keep customers
             <br /> waiting. Soundbox confirms payments
             <br /> instantly and audibly.
@@ -84,13 +84,13 @@ const Home = () => {
           <p className="text-[18px] text-blue">Security</p>
           <div className="xl:flex xl:mt-[200px] xl:space-x-[190px]">
           {!isXlScreen && (
-          <div>
-            <img
-              src={require("../pictures/image1507.png")}
-              className="mt-[30px] pic bg-[#E1EBFB] h-[149px] w-[130px]"
-            />
-          </div>
-        )}
+            <div>
+              <img
+                src={require("../pictures/image1507.png")}
+                className="mt-[30px] pic bg-[#E1EBFB] h-[149px] w-[130px]"
+              />
+            </div>
+          )}
             <div className="mt-[60px] xl:m-0">
               <h1 className="text-[26px] font-bold">Reduce Overhead Costs</h1>
               <p className="leading-[25px] mt-2 font-[450] xl:leading-[20px]">
@@ -122,7 +122,7 @@ const Home = () => {
 
       <div className="mt-[100px] bg-[#F4F6F8] xl:flex">
         <div className="relative xl:ml-[80px] py-[80px] flex flex-row items-center justify-center">
-          <div className="absolute top-[78px] left-[207px] xl:left-[340px] xl:top-[70px]">
+          <div className="absolute top-[73px] left-[195px] xl:left-[340px] xl:top-[70px]">
             <img src={require("../pictures/ellipse15.png")}
              className="h-[14px] w-[14px] xl:w-[25.48px] xl:h-[25.48px]"/>
           </div>
@@ -186,9 +186,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="xl:ml-[80px] w-[368px] mx-auto xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
+      <div className="xl:ml-[80px] w-[368px] items-center mx-auto xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
         <h1 className="text-[40px] font-[700] xl:ml-0">How it works</h1>
-        <div className="flex justify-center xl:justify-start xl:flex-row 
+        <div className="flex items-center xl:items-start xl:flex-row 
           flex-col space-y-[30px] xl:space-y-0 xl:space-x-[50px]">
           <div className="">
             <div className="">
