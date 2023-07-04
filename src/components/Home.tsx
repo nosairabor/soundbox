@@ -33,14 +33,14 @@ const Home = () => {
   return (
     <div className="circular-font">
       <div className="flex items-center justify-center">
-        <div className="flex mt-[90px] flex-col justify-center items-center xl:mx-[105px] mt-[178px]">
+        <div className="flex mt-[70px] flex-col justify-center items-center xl:mx-[105px] mt-[178px]">
           <div className="text-[44px] leading-[49px] xl:text-[60px] font-bold xl:leading-[75.9px]">
             <span className="header-gradient">Instant & Audible</span>
             <br />
             Notification of
             <br /> Payments
           </div>
-          <div className="mt-[30px] text-[18px] xl:mt-[40px] xl:text-[20px] xl:-ml-[65px]  font-[450] leading-[26px]">
+          <div className="mt-[30px] text-[18px] xl:mt-[40px] xl:text-[20px] -ml-[72px]  font-[450] leading-[26px]">
             Now you no longer have to keep customers
             <br /> waiting. Soundbox confirms payments
             <br /> instantly and audibly.
