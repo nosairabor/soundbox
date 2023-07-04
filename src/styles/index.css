@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+@import url('https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book');
+
+.App{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-gradient{
+    background: linear-gradient(to right,  #9292FF, #2AA1F7, #FF92DA);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.header-gradient2{
+    background: linear-gradient(to right, #2AA1F7, #9292FF, #FF92DA);
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+.circular-font{
+    font-family: 'Circular Std Book';
+}
+.nunito-font{
+    font-family: 'Nunito Sans';
+}
+
+/* style for the dash under the navbar */
+.unclicked{
+    color: black;
+}
+.clicked{
+    color: #0066FF;
+    border-bottom: 3px solid;
+    border-color: #0066FF;
+    padding-bottom: 7px;
+    font-weight: 600;
+    padding-right: 5px;
+    padding-left: 3px;
+    transition-property: border, color;
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;
+}
+/* ////////// */
+
+.pic{
+    background:
+        url(../pictures/percentage.png),
+        #E1EBFB -65.081px -68.93px / 160.541% 138.14% no-repeat;
+}
+
+.accordion-transition, .mobile-nav {
+    opacity: 0;
+    max-height: 0;
+    animation: accordionOpen 0.4s ease-in forwards;
+}
+  
+@keyframes accordionOpen {
+0% {
+    opacity: 0;
+    max-height: 0;
+}
+100% {
+    opacity: 1;
+    max-height: 1000px;
+}
+}
