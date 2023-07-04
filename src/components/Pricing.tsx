@@ -159,7 +159,7 @@ const Pricing = () => {
 
       <div className="xl:ml-[80px] w-[368px] mx-auto xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
         <h1 className="text-[40px] font-[700] xl:ml-0">How it works</h1>
-        <div className="flex justify-center xl:justify-start xl:flex-row 
+        <div className="flex items-center xl:justify-start xl:flex-row 
           flex-col space-y-[30px] xl:space-y-0 xl:space-x-[50px]">
           <div className="">
             <div className="">
