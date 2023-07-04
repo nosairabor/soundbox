@@ -91,7 +91,7 @@ const Home = () => {
               />
             </div>
           )}
-            <div className="mt-[60px] xl:m-0">
+            <div className="mt-[50px] xl:m-0">
               <h1 className="text-[26px] font-bold">Reduce Overhead Costs</h1>
               <p className="leading-[25px] mt-2 font-[450] xl:leading-[20px]">
                 Staff no longer have to call or message you to
