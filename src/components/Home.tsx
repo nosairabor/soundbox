@@ -1,14 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Accordion from "./Accordion";
-import { GoArrowUpRight } from "react-icons/go";
-import { AiFillFacebook } from "react-icons/ai";
-import { AiFillInstagram } from "react-icons/ai";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { IoMail } from "react-icons/io5";
-import { AiFillYoutube } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
-
 
 const Home = () => {
   
@@ -33,14 +24,15 @@ const Home = () => {
   return (
     <div className="circular-font">
       <div className="flex items-center justify-center">
-        <div className="flex mt-[70px] flex-col justify-center items-center xl:mx-[105px] mt-[178px]">
-          <div className="text-[44px] leading-[49px] xl:text-[60px] font-bold xl:leading-[75.9px]">
+        <div className="flex mt-[70px] flex-col justify-center items-center md:mx-[30px]  xl:mx-[105px] mt-[178px]">
+          <div className="text-[44px] md:mt-[30px] mt-0 xl:mt-0 
+          md:-ml-2 xl:ml-0 ml-0 leading-[49px] xl:text-[60px] font-bold xl:leading-[75.9px]">
             <span className="header-gradient">Instant & Audible</span>
             <br />
             Notification of
             <br /> Payments
           </div>
-          <div className="mt-[30px] text-[18px] xl:mt-[40px] xl:text-[20px] xl:-ml-[72px]  font-[450] leading-[26px]">
+          <div className="mt-[30px] text-[18px] xl:mt-[40px]   xl:text-[20px] xl:-ml-[72px] md:ml-0 font-[450] leading-[26px]">
             Now you no longer have to keep customers
             <br /> waiting. Soundbox confirms payments
             <br /> instantly and audibly.
@@ -50,7 +42,7 @@ const Home = () => {
               className="w-[154px] h-[45px] py-2  border border-blue font-medium rounded-[100px] bg-blue 
               text-center text-white xl:px-[20px] xl:py-[13px] xl:w-[auto] xl:h-[auto]"
             >
-              <Link to="">Get Device Now</Link>
+              <Link to="/pricing">Get Device Now</Link>
             </div>
             <div 
               className="w-[185px] h-[45px] justify-center py-2 text-white space-x-2 font-medium bg-black flex border
@@ -68,7 +60,7 @@ const Home = () => {
         <div className="mt-[90px]">
           <img
             src={require("../pictures/Vector.png")}
-            className="hidden xl:block w-full h-full"
+            className="hidden md:block xl:block w-full h-full"
           />
         </div>
       </div>
@@ -79,12 +71,14 @@ const Home = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center space-y-[20px] xl:flex xl:flex-row xl:space-x-[30px] mt-[60px]">
-        <div className="bg-[#E1EBFB] w-[368px] h-[402px] xl:w-[863px] xl:h-[357px] xl:ml-[80px] rounded-xl p-5">
+      <div className="flex flex-col items-center space-y-[20px] md:justify-center 
+        xl:justify-start md:flex-row md:space-x-4 xl:flex xl:flex-row xl:space-x-[30px] mt-[60px]">
+        <div className="bg-[#E1EBFB] w-[368px] h-[402px] xl:w-[863px] 
+          xl:h-[357px] xl:ml-[80px] rounded-xl p-5">
           <p className="text-[18px] text-blue">Security</p>
           <div className="xl:flex xl:mt-[200px] xl:space-x-[190px]">
           {!isXlScreen && (
-            <div>
+            <div> 
               <img
                 src={require("../pictures/image1507.png")}
                 className="mt-[30px] pic bg-[#E1EBFB] h-[149px] w-[130px]"
@@ -108,11 +102,12 @@ const Home = () => {
             
           </div>
         </div>
-        <div className="bg-blue h-[357px] w-[368px] xl:w-[387px] xl:h-[357px] rounded-xl text-white p-5 ">
+        <div className="bg-blue h-[402px] w-[368px] xl:w-[387px] 
+          xl:-translate-y-[9px] md:-translate-y-[9px] xl:h-[357px] rounded-xl text-white p-5 ">
           <p className="text-[18px]">Value</p>
-          <div className="mt-[190px]">
+          <div className="xl:mt-[190px] mt-[240px]">
             <h1 className="text-[26px] font-bold">Get Paid Easily</h1>
-            <p className=" mt-2 font-[450] leading-[20px]">
+            <p className="mt-2 font-[450] leading-[20px]">
               All funds are instantly paid to your
               <br /> account.
             </p>
@@ -120,8 +115,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-[100px] bg-[#F4F6F8] xl:flex">
-        <div className="relative xl:ml-[80px] py-[80px] flex flex-row items-center justify-center">
+      <div className="mt-[100px] bg-[#F4F6F8] md:flex xl:flex">
+        <div className="relative md:ml-[20px] xl:ml-[80px] py-[80px] flex flex-row items-center justify-center">
           <div className="absolute top-[73px] left-[195px] xl:left-[340px] xl:top-[70px]">
             <img src={require("../pictures/ellipse15.png")}
              className="h-[14px] w-[14px] xl:w-[25.48px] xl:h-[25.48px]"/>
@@ -165,14 +160,14 @@ const Home = () => {
           />
         </div>
         
-        <div className="flex flex-col items-center xl:items-start xl:mt-[250px] xl:ml-[110px]">
+        <div className="flex flex-col items-center xl:items-start  md:mt-[160px] md:ml-[30px]  xl:mt-[250px] xl:ml-[110px]">
           <h1 className="text-[32px] xl:text-[40px] font-bold
           leading-[40px] xl:leading-[50px]">
             Payment Received and
             <br /> Announced, <span className="text-blue">in Seconds.</span>
           </h1>
-          <p className="text-[18px] xl:text-[20px] leading-[25px] 
-            xl:leading-[26px] font-[450] mt-[25px]">
+          <p className="text-[17px] xl:text-[20px] leading-[25px] 
+            xl:leading-[26px] font-[450] mt-[25px] md:mt-[15px] xl:mt-[25px]">
             Multiple transactions announced within
             <br /> seconds. Our soundbox notifies you of your
             <br /> customer's payments within seconds.
@@ -186,11 +181,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="xl:ml-[80px] w-[368px] items-center mx-auto xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
-        <h1 className="text-[40px] font-[700] xl:ml-0">How it works</h1>
-        <div className="flex items-center xl:items-start xl:flex-row 
-          flex-col space-y-[30px] xl:space-y-0 xl:space-x-[50px]">
-          <div className="">
+      <div className="xl:ml-[80px] md:ml-[20px] w-[368px] items-center 
+        mx-auto xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
+        <h1 className="text-[40px] font-[700] ml-4 md:ml-0">How it works</h1>
+        <div className="flex items-center xl:items-start xl:justify-start 
+          md:flex-row  xl:flex-row flex-col space-y-[30px]
+           md:space-y-0 xl:space-y-0 xl:space-x-[50px]">
+          <div className="ml-4 md:ml-0">
             <div className="">
               <img
                 src={require("../pictures/scan.png")}
@@ -198,10 +195,10 @@ const Home = () => {
               />
             </div>
             <h1 className="text-[26px] font-[700] mt-[30px]">Step 1</h1>
-            <div className="text-[18px] xl:text-[20px] font-[450] mt-[29px]">
-              Customers makes a transfer of the required
-              <br /> amount to the merchant's account
-              <br /> displayed on the soundbox.
+            <div className="text-[18px]  xl:text-[20px] font-[450] mt-[29px]">
+              Customers makes a transfer of<br className="hidden md:block xl:hidden"/> the required
+              <br className="hidden md:hidden xl:block"/> amount to the merchant's account
+              <br className="hidden md:block" /> displayed on the soundbox.
             </div>
           </div>
           <div className="">

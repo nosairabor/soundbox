@@ -2,11 +2,12 @@
 
 const Pricing = () => {
   return (
-    <div className="circular-font bg-[#F4F6F8] xl:bg-white">
+    <div className="circular-font bg-[#F4F6F8] md:bg-white">
       <div className="flex flex-col items-center justify-center h-[359px] bg-[#F4F6F8] relative">
-        <h1 className=" header-gradient2 font-bold text-[34px] xl:text-[60px]">Pricing</h1>
-        <p className="z-[1] mt-[17px] font-[450] text-[18px] xl:text-[20px] text-center">
-          Now you no longer have to keep customers waiting. Soundbox
+        <h1 className=" header-gradient2 font-bold text-[34px] md:text-[50px] xl:text-[60px]">Pricing</h1>
+        <p className="z-[1] mt-[17px] font-[450] text-[18px] md:text-[20px] text-center">
+          Now you no longer have to keep customers waiting. 
+          Soundbox<br className="ml:block xl:hidden"/>
           <br className="hidden xl:block"/> confirms payments instantly and audibly.
         </p>
       </div>
@@ -18,7 +19,7 @@ const Pricing = () => {
       </div>
 
       <div className="w-[368px] flex flex-col mx-auto xl:w-full  rounded-xl xl:rounded-none">
-        <div className="hidden xl:block mt-[40px] xl:mt-[100px]">
+        <div className="hidden md:block xl:block mt-[40px] xl:mt-[100px]">
           <h2 className="text-center text-[26px] text-blue">
             Product Packages
           </h2>
@@ -26,10 +27,11 @@ const Pricing = () => {
             Everything you need to know about the SoundBox devices.
           </p>
         </div>
-        <div className="mt-[40px] xl:mt-[80px] flex flex-col xl:flex-row items-center justify-center gap-x-[30px]">
-          <div className="w-[338px]  xl:w-[517px] xl:border bg-white rounded-[10px] xl:border-grey">
+        <div className="mt-[40px] xl:mt-[80px] flex flex-col md:flex-row xl:flex-row items-center justify-center gap-x-[30px]">
+          <div className="w-[338px] md:-translate-y-[12px] translate-y-0 xl:translate-y-0 
+            xl:w-[517px] md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2">
             <div className="flex flex-col items-center">
-              <div className="xl:hidden mt-[40px]">
+              <div className="xl:hidden md:hidden mt-[40px]">
                 <h2 className="text-center text-[26px] text-blue">
                   Product Packages
                 </h2>
@@ -95,7 +97,8 @@ const Pricing = () => {
             </div>
           </div>
           {/* Soundbox without screen */}
-          <div className="w-[338px] xl:w-[517px] mt-[50px] mb-10 xl:mb-0 xl:mt-0 xl:border bg-white rounded-[10px] xl:border-grey">
+          <div className="w-[338px] xl:w-[517px] mt-[50px] mb-10 xl:mb-0 xl:mt-0 
+          md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2">
             <div className="flex flex-col items-center">
               <div className="mt-[30px]"><img src={require("../pictures/yep-soundbox2.png")}/></div>
               <h2 className="text-[24px] font-[500]">
@@ -157,11 +160,13 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="xl:ml-[80px] w-[368px] mx-auto xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
-        <h1 className="text-[40px] font-[700] xl:ml-0">How it works</h1>
-        <div className="flex items-center xl:justify-start xl:flex-row 
-          flex-col space-y-[30px] xl:space-y-0 xl:space-x-[50px]">
-          <div className="">
+      <div className="xl:ml-[80px] md:ml-[20px] w-[368px] items-center 
+         xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
+        <h1 className="text-[40px] font-[700] ml-4 md:ml-0">How it works</h1>
+        <div className="flex items-center xl:items-start xl:justify-start 
+          md:flex-row  xl:flex-row flex-col space-y-[30px]
+           md:space-y-0 xl:space-y-0 xl:space-x-[50px]">
+          <div className="ml-4 md:ml-0">
             <div className="">
               <img
                 src={require("../pictures/scan.png")}
@@ -169,10 +174,10 @@ const Pricing = () => {
               />
             </div>
             <h1 className="text-[26px] font-[700] mt-[30px]">Step 1</h1>
-            <div className="text-[18px] xl:text-[20px] font-[450] mt-[29px]">
-              Customers makes a transfer of the required
-              <br /> amount to the merchant's account
-              <br /> displayed on the soundbox.
+            <div className="text-[18px]  xl:text-[20px] font-[450] mt-[29px]">
+              Customers makes a transfer of<br className="hidden md:block xl:hidden"/> the required
+              <br className="hidden md:hidden xl:block"/> amount to the merchant's account
+              <br className="hidden md:block" /> displayed on the soundbox.
             </div>
           </div>
           <div className="">
@@ -198,7 +203,7 @@ const Pricing = () => {
               />
             </div>
             <h1 className="text-[26px] font-[700] mt-[30px]">Step 3</h1>
-            <div className="text-[18px] xl:text-[20px] font-[450] mt-[29px] pb-8">
+            <div className="text-[18px] xl:text-[20px] font-[450] mt-[29px]">
               Merchant can confirm that account has
               <br /> been credited.
             </div>

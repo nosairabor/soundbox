@@ -125,10 +125,12 @@ const Navbar = () => {
                                 Soundbox
                         </Link>
                     </div>
-                    <div className="p-3 mt-5 mx-auto text-center text-blue border-blue border rounded-lg h-[56px] w-[355px]">
+                    <div className="p-3 mt-5 mx-auto text-center md:mx-0 text-blue md:ml-5 
+                        border-blue border rounded-lg h-[56px] w-[355px]">
                         Sign In
                     </div>
-                    <div className="mx-auto mt-5 text-center text-white bg-blue border-blue border rounded-lg py-3 w-[355px]">
+                    <div className="mx-auto md:mx-0 mt-5 text-center text-white md:ml-5 
+                        bg-blue border-blue border rounded-lg py-3 w-[355px]">
                         Create Account
                     </div>
 

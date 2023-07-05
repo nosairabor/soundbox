@@ -24,8 +24,10 @@ const Footer = () => {
 
     return (
         <div className="circular-font">
-            <div className="xl:ml-[80px] mt-[80px] xl:mt-[150px] flex flex-col items-center xl:items-start">
-                <h1 className="text-[32px] w-[368px] xl:w-[529px] leading-[40px] xl:leading-normal xl:text-[40px] font-[700]">
+            <div className="xl:ml-[80px] mt-[80px] xl:mt-[150px] flex 
+            flex-col items-center md:items-start md:ml-[30px] xl:items-start">
+                <h1 className="text-[32px] w-[368px] xl:w-[529px] 
+                 leading-[40px] xl:leading-normal xl:text-[40px] font-[700]">
                     Got Questions?<br/>Sure We Can Answer <br className="xl:hidden"/> Them.
                 </h1>
                 <p className="text-[18px] mt-[20px] xl:text-[20px] font-[450]"> 
@@ -65,8 +67,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-[486.2px] xl:w-[742px] xl:h-[824px]">
-                    <img src={require('../pictures/image1500.png')} alt="image1500.png"/>
+                <div className="flex xl:block h-[486.2px] md:h-[850.2px] xl:w-[742px] xl:h-[824px]">
+                    <img src={require('../pictures/image1500.png')} alt="image1500.png"
+                    className="md:grow xl:grow-0 "/>
                 </div>
             </div>
 

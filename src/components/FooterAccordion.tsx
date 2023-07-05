@@ -22,7 +22,7 @@ const FooterAccordion:React.FC<PropTypes> = ({
 }) => {
     
     return (
-        <div className="w-[360px] mt-[50px]">
+        <div className="w-[360px] mt-[50px] md:mt-[50px] md:w-[720px]">
             <div className="mt-[20px] mb-[20px]">
                 <img src={require('../pictures/yep-logo.png')}
                     className="h-[39.2px] w-[110px]"
@@ -103,33 +103,45 @@ const FooterAccordion:React.FC<PropTypes> = ({
             
             <div className="mt-[30px] pb-[50px] space-y-[20px]">
                 <div className="flex justify-between">
-                    <IoMail className="mt-[2px] text-blue text-[26px]"/>
-                    <p className="text-[20px] -ml-[150px] font-[450]">hello@getyep.co</p>
+                    <div className="flex space-x-3">
+                        <IoMail className="mt-[2px] text-blue text-[26px]"/>
+                        <p className="text-[20px] font-[450]">hello@getyep.co</p>
+                    </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
-                    <AiFillFacebook className="mt-[2px] text-blue text-[26px]"/>
-                    <p className="text-[20px] -ml-[210px] font-[450]">Facebook</p>
+                    <div className="flex space-x-3">
+                        <AiFillFacebook className="mt-[2px] text-blue text-[26px]"/>
+                        <p className="text-[20px] font-[450]">Facebook</p>
+                    </div>
+                   <BsChevronRight className="mt-1 text-[20px]"/>
+                </div>
+                <div className="flex justify-between">
+                    <div className="flex space-x-3">
+                        <AiFillInstagram className="mt-[2px] text-blue text-[26px]"/>
+                        <p className="text-[20px] font-[450]">Instagram</p>
+                    </div>
+                   <BsChevronRight className="mt-1 text-[20px]"/>
+                </div>
+                <div className="flex justify-between">
+                    <div className="flex space-x-3">
+                        <AiOutlineTwitter className="mt-[2px] text-blue text-[26px]"/>
+                        <p className="text-[20px] font-[450]">Twitter</p>
+                    </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
-                    <AiFillInstagram className="mt-[2px] text-blue text-[26px]"/>
-                    <p className="text-[20px] -ml-[210px] font-[450]">Instagram</p>
+                    <div className="flex space-x-3">
+                        <AiFillLinkedin className="mt-[2px] text-blue text-[26px]"/>
+                        <p className="text-[20px] font-[450]">LinkedIn</p>
+                    </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
-                    <AiOutlineTwitter className="mt-[2px] text-blue text-[26px]"/>
-                    <p className="text-[20px] -ml-[240px] font-[450]">Twitter</p>
-                    <BsChevronRight className="mt-1 text-[20px]"/>
-                </div>
-                <div className="flex justify-between">
-                    <AiFillLinkedin className="mt-[2px] text-blue text-[26px]"/>
-                    <p className="text-[20px] -ml-[220px] font-[450]">LinkedIn</p>
-                    <BsChevronRight className="mt-1 text-[20px]"/>
-                </div>
-                <div className="flex justify-between">
-                    <AiFillYoutube className="mt-[2px] text-blue text-[26px]"/>
-                    <p className="text-[20px] -ml-[220px] font-[450]">YouTube</p>
+                    <div className="flex space-x-3">
+                        <AiFillYoutube className="mt-[2px] text-blue text-[26px]"/>
+                        <p className="text-[20px] font-[450]">YouTube</p>
+                    </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 
