@@ -195,7 +195,7 @@ const Pricing = () => {
               <br /> amount.
             </div>
           </div>
-          <div className="">
+          <div className="pb-5">
             <div className="">
               <img
                 src={require("../pictures/check-marks.png")}
