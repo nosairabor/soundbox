@@ -160,13 +160,14 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="xl:ml-[80px] md:ml-[20px] w-[368px] 
-         xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
-        <h1 className="text-[40px] font-[700] ml-4 md:ml-0 flex justify-start">How it works</h1>
-        <div className="flex justify-center items-center 
-          md:flex-row  xl:flex-row flex-col space-y-[30px]
+      <div className=" md:ml-[20px] flex flex-col justify-center
+          md:w-full mt-[100px] space-y-[80px]"
+      >
+        <h1 className="text-[40px] font-[700] ml-2 xl:ml-[60px]">How it works</h1>
+        <div className="flex items-center justify-center  
+          md:flex-row  flex-col items-center space-y-[30px]
            md:space-y-0 xl:space-y-0 xl:space-x-[50px]">
-          <div className="ml-4 md:ml-0">
+          <div className=" width-full max-w-[368px] ">
             <div className="">
               <img
                 src={require("../pictures/scan.png")}
@@ -174,13 +175,13 @@ const Pricing = () => {
               />
             </div>
             <h1 className="text-[26px] font-[700] mt-[30px]">Step 1</h1>
-            <div className="text-[18px] whitespace-nowrap xl:text-[20px] font-[450] mt-[29px]">
-              Customers makes a transfer of<br/> the required
-               amount to the<br /> merchant's account
-              <br /> displayed on the soundbox.
+            <div className="text-[18px] width-full max-w-[360px] whitespace-normal xl:text-[20px] font-[450] mt-[29px]">
+              Customers makes a transfer of the required 
+               amount to the merchant's account
+               displayed on the soundbox.
             </div>
           </div>
-          <div className="">
+          <div className="md:ml-[30px] xl:ml-0">
             <div className="">
               <img
                 src={require("../pictures/bell-checked.png")}
@@ -188,14 +189,14 @@ const Pricing = () => {
               />
             </div>
             <h1 className="text-[26px] font-[700] mt-[30px]">Step 2</h1>
-            <div className="text-[18px] xl:text-[20px] font-[450] mt-[29px]">
+            <div className="text-[18px] whitespace-normal width-full max-w-[360px] xl:text-[20px] font-[450] mt-[29px]">
               Sound box audibly notifies merchant and
-              <br />
+              
               customer of payment confirmation and
-              <br /> amount.
+               amount.
             </div>
           </div>
-          <div className="pb-5">
+          <div className="-translate-y-[20px]">
             <div className="">
               <img
                 src={require("../pictures/check-marks.png")}
@@ -203,9 +204,9 @@ const Pricing = () => {
               />
             </div>
             <h1 className="text-[26px] font-[700] mt-[30px]">Step 3</h1>
-            <div className="text-[18px] xl:text-[20px] font-[450] mt-[29px]">
+            <div className="text-[18px] width-full max-w-[360px] xl:text-[20px] whitespace-normal font-[450] mt-[29px]">
               Merchant can confirm that account has
-              <br /> been credited.
+               been credited.
             </div>
           </div>
         </div>

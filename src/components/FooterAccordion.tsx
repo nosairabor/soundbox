@@ -22,7 +22,7 @@ const FooterAccordion:React.FC<PropTypes> = ({
 }) => {
     
     return (
-        <div className="w-[360px] mt-[50px] md:mt-[50px] md:w-[720px]">
+        <div className="w-[360px] mt-[50px]  md:w-full max-w-[720px] ">
             <div className="mt-[20px] mb-[20px]">
                 <img src={require('../pictures/yep-logo.png')}
                     className="h-[39.2px] w-[110px]"

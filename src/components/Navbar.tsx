@@ -17,8 +17,8 @@ const Navbar = () => {
         setHamburger(!hamburger);
     };
     return (
-        <>
-            <div className="mx-[30px] flex justify-between xl:flex xl:justify-between xl:mx-[105px] nunito-font">
+        <div className=" z-[100]">
+            <div className="mx-[30px] flex justify-between xl:flex xl:justify-between xl:mx-[105px] nunito-font" >
                 <div className=" mt-[25px]">
                     <div className="mx-0 h-[32px] w-[90px] xl:h-[50px] xl:w-[140px]">
                         <img src={require('../pictures/yep-logo.png')}
@@ -135,7 +135,7 @@ const Navbar = () => {
                     </div>
 
             </div>
-        </>
+        </div>
     );
 }
  

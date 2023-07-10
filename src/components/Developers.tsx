@@ -60,11 +60,11 @@ const Developers = () => {
                 <img src={require("../pictures/pricing2.png")}
                 alt="" />
             </div>
-            <div className="hidden xl:hidden absolute right-[1px] top-[58px] z-0">
+            <div className="xl:hidden absolute right-[1px] top-[58px] z-0" >
                 <img src={require("../pictures/vectormobile1.png")}
                 alt="" />
             </div>
-            <div className="hidden xl:hidden absolute right-[1px] top-[119px] z-0">
+            <div className=" xl:hidden absolute right-[1px] top-[119px] z-0">
                 <img src={require("../pictures/vectormobile2.png")}
                 alt="" />
             </div>
@@ -81,7 +81,7 @@ const Developers = () => {
                     />
                 </div>
                 <div className="bg-white shadow-xl w-[368px] h-[930px] xl:w-[738px] xl:h-[605px]">
-                    <div className="ml-[10px] md:ml-[50px] mt-[30px]">
+                    <div className="ml-[33px] md:ml-[50px] mt-[30px]">
                         <h2 className="text-[20px] xl:flex xl:justify-start xl:items-start font-bold">Tell us about yourself briefly.</h2>
                         <p className="[text-16px] flex xl:items-start font-[450] mt-[10px]">Kindly provide your information below</p>
                     </div>

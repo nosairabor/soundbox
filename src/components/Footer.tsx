@@ -25,15 +25,17 @@ const Footer = () => {
 
     return (
         <div className="circular-font">
-            <div className="xl:ml-[80px] mt-[80px] xl:mt-[150px] flex 
+            <div className=" mt-[80px] xl:mt-[150px] flex 
             flex-col    ">
-                <h1 className="text-[32px] w-[368px] xl:w-[529px] 
-                 leading-[40px] ml-[10px] xl:leading-normal xl:text-[40px] font-[700]">
-                    Got Questions?<br/>Sure We Can Answer <br className="xl:hidden"/> Them.
-                </h1>
-                <p className="text-[18px] ml-[10px] mt-[20px] xl:text-[20px] font-[450]"> 
-                    We answered questions so you don't have to<br className="xl:hidden"/> ask them.
-                </p>
+                <div className="xl:ml-[80px]">
+                    <h1 className="text-[32px] max-w-[368px] xl:max-w-[529px] 
+                    leading-[40px] ml-[10px] xl:leading-normal xl:text-[40px] font-[700]">
+                        Got Questions?<br/>Sure We Can Answer <br className="xl:hidden"/> Them.
+                    </h1>
+                    <p className="text-[18px] ml-[10px] mt-[20px] xl:text-[20px] font-[450]"> 
+                        We answered questions so you don't have to<br className="md:hidden"/> ask them.
+                    </p>
+                </div>
                 <Accordion handleLinkClick={handleLinkClick}
                     isOpen={isOpen}
                     activeLink={activeLink}
@@ -41,17 +43,17 @@ const Footer = () => {
             </div>
 
             <div className="text-white mt-[80px] flex flex-col justify-center  xl:flex-row">
-                <div className="w-full xl:max-w-[850px] xl:h-[800px] h-[729px] bg-blue ">
-                    <h1 className="xl:ml-[70px] mt-[50px] ml-[30px] xl:ml-0 text-[32px] xl:mt-[100px]
+                <div className="w-full xl:max-w-[850px] xl:h-[824px] h-[729px] bg-blue ">
+                    <h1 className="xl:ml-[70px] mt-[50px] ml-[20px] xl:ml-0 text-[32px] xl:mt-[100px]
                         xl:text-[60px] font-[700]">
                         Join other<br/> merchants on the<br/> Yep! Side of Life.
                     </h1>
-                    <p className="mt-[40px] ml-[30px] flex flex-col text-[18px] xl:ml-[70px] xl:text-[26px] font-[450]">
+                    <p className="mt-[40px] ml-[20px] flex flex-col text-[18px] xl:ml-[70px] xl:text-[26px] font-[450]">
                     No more checking of phones every few<br className="xl:hidden"/> minutes, no <br className="hidden xl:block"/>
                     more missed payments, and no more panic from<br className="hidden xl:block"/> 
                     delayed payment<br className="xl:hidden"/> confirmation!
                     </p>
-                    <div className="flex flex-col ml-[30px] space-y-[20px] 
+                    <div className="flex flex-col ml-[20px] space-y-[20px] 
                         xl:space-y-0 xl:flex-row xl:space-x-10 xl:ml-[70px] mt-[40px]"
                     >
                         <div>
@@ -68,9 +70,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-[486.2px] md:h-[850.2px] xl:max-w-[742px] xl:h-[824px]">
+                <div className="flex w-full h-[486.2px] md:h-[850.2px] xl:max-w-[800px] xl:h-[824px]">
                     <img src={require('../pictures/image1500.png')} alt="image1500.png"
-                    className=""/>
+                    className="grow"/>
                 </div>
             </div>
 
