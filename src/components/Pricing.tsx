@@ -7,7 +7,7 @@ const Pricing = () => {
         <h1 className=" header-gradient2 font-bold text-[34px] md:text-[50px] xl:text-[60px]">Pricing</h1>
         <p className="z-[1] mt-[17px] font-[450] text-[18px] md:text-[20px] text-center">
           Now you no longer have to keep customers waiting. 
-          Soundbox<br className="ml:block xl:hidden"/>
+          Soundbox<br className="hidden sm:block xl:hidden"/>
           <br className="hidden xl:block"/> confirms payments instantly and audibly.
         </p>
       </div>

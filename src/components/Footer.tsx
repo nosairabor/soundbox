@@ -33,7 +33,7 @@ const Footer = () => {
                         Got Questions?<br/>Sure We Can Answer <br className="xl:hidden"/> Them.
                     </h1>
                     <p className="text-[18px] ml-[10px] mt-[20px] xl:text-[20px] font-[450]"> 
-                        We answered questions so you don't have to<br className="md:hidden"/> ask them.
+                        We answered questions so you don't have to ask them.
                     </p>
                 </div>
                 <Accordion handleLinkClick={handleLinkClick}
