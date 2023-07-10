@@ -70,22 +70,23 @@ const Developers = () => {
             </div>
             
 
-            <div className="w-[368px] xl:w-full flex flex-col mx-auto xl:flex-row -translate-y-[120px] justify-center mb-[-120px]">
+            <div className="w-[368px] md:w-full flex flex-col mx-auto md:flex-row -translate-y-[120px] justify-center mb-[-120px]">
                 <div className="">
                     <img
                         src={require("../pictures/sls-1.png")}
-                        className="rounded-t-lg xl:rounded-tl-lg 
-                        xl:rounded-l-[18.2px] w-[368px] h-[250px]
+                        className="rounded-t-lg md:rounded-l-lg 
+                        xl:rounded-l-[18.2px] w-full max-w-[368px] h-[250px]
                         xl:h-full h-full"
                         alt=""
                     />
                 </div>
                 <div className="bg-white shadow-xl w-[368px] h-[930px] xl:w-[738px] xl:h-[605px]">
-                    <div className="my-[70px] flex flex-col items-center xl:mx-[54px]">
-                        <div>
-                            <h2 className="text-[20px] xl:flex xl:items-start font-bold">Tell us about yourself briefly.</h2>
-                            <p className="[text-16px] flex xl:items-start font-[450] mt-[10px]">Kindly provide your information below</p>
-                        </div>
+                    <div className="ml-[10px] md:ml-[50px] mt-[30px]">
+                        <h2 className="text-[20px] xl:flex xl:justify-start xl:items-start font-bold">Tell us about yourself briefly.</h2>
+                        <p className="[text-16px] flex xl:items-start font-[450] mt-[10px]">Kindly provide your information below</p>
+                    </div>
+                    <div className="mb-[70px] flex flex-col items-center xl:mx-[54px]">
+                        
                         
                         <Formik
                             initialValues={initialValues}

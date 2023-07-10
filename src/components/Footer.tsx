@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Accordion from "./Accordion";
 import {GoArrowUpRight} from "react-icons/go"
+import { BsChevronDown } from "react-icons/bs";
 import {AiFillFacebook} from "react-icons/ai"
 import {AiFillInstagram} from "react-icons/ai"
 import {AiOutlineTwitter} from "react-icons/ai"
@@ -25,12 +26,12 @@ const Footer = () => {
     return (
         <div className="circular-font">
             <div className="xl:ml-[80px] mt-[80px] xl:mt-[150px] flex 
-            flex-col items-center md:items-start md:ml-[30px] xl:items-start">
+            flex-col    ">
                 <h1 className="text-[32px] w-[368px] xl:w-[529px] 
-                 leading-[40px] xl:leading-normal xl:text-[40px] font-[700]">
+                 leading-[40px] ml-[20px] xl:leading-normal xl:text-[40px] font-[700]">
                     Got Questions?<br/>Sure We Can Answer <br className="xl:hidden"/> Them.
                 </h1>
-                <p className="text-[18px] mt-[20px] xl:text-[20px] font-[450]"> 
+                <p className="text-[18px] ml-[20px] mt-[20px] xl:text-[20px] font-[450]"> 
                     We answered questions so you don't have to<br className="xl:hidden"/> ask them.
                 </p>
                 <Accordion handleLinkClick={handleLinkClick}
@@ -81,14 +82,14 @@ const Footer = () => {
                         />
                     </div>
                     <div className="flex mt-[40px] text-black  justify-between pb-12">
-                        <div className="">
-                            <p className="text-[18px] font-[450] mb-[34px]">Personal</p>
+                        <div className="text-secondary">
+                            <p className="text-[18px] font-[450] mb-[34px] text-header">Personal</p>
                             <p className="text-[20px] font-[450] mt-[20px]">Digital Banking</p>
                             <p className="text-[20px] font-[450] mt-[20px]">Cards</p>
                             <p className="text-[20px] font-[450] mt-[20px]">SMS Pay</p>
                         </div>
-                        <div className="">
-                            <p className="text-[18px] font-[450] mb-[34px]">Business</p>
+                        <div className="text-secondary">
+                            <p className="text-[18px] font-[450] mb-[34px] text-header">Business</p>
                             <div className="flex space-x-1">
                                 <p className="text-[20px] font-[450] mt-[px]">PayCenter</p>
                                 <GoArrowUpRight className="mt-[7px] text-blue font-black"/>
@@ -98,15 +99,26 @@ const Footer = () => {
                             
                             <p className="text-[20px] font-[450] mt-[20px]">SoundBox</p>
                         </div>
-                        <div className="">
-                            <p className="text-[18px] font-[450] mb-[34px]">Company</p>
+                        <div className="text-secondary">
+                            <p className="text-[18px] font-[450] mb-[34px] text-header">Company</p>
                             <p className="text-[20px] font-[450] mt-[20px]">About</p>
                             <p className="text-[20px] font-[450] mt-[20px]">Documentations</p>
                             <p className="text-[20px] font-[450] mt-[20px]">Terms and Conditions</p>
                             <p className="text-[20px] font-[450] mt-[20px]">Privacy Policy</p>
                         </div>
-                        <div>
-                            <p>Nigeria</p>
+                        <div className="w-full max-w-[196px] text-header -m-1">
+                            <div className="flex justify-between  border border-grey 
+                                rounded-[20px] py-[10px] px-[20px]">
+                                <div className="flex space-x-[8px]">
+                                    <img src={require('../pictures/mask-group.png')}
+                                        className=""
+                                    />
+                                    <p>Nigeria</p>
+                                </div>
+                                
+                                <BsChevronDown className=" mt-[5px]"/>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -147,6 +159,7 @@ const Footer = () => {
                         activeLink={activeLink}
                 />
             </div>
+            
         </div>
     );
 }

@@ -28,7 +28,7 @@ const Pricing = () => {
           </p>
         </div>
         <div className="mt-[40px] xl:mt-[80px] flex flex-col md:flex-row xl:flex-row items-center justify-center gap-x-[30px]">
-          <div className="w-[338px] md:-translate-y-[12px] translate-y-0 xl:translate-y-0 
+          <div className="w-[338px] 
             xl:w-[517px] md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2">
             <div className="flex flex-col items-center">
               <div className="xl:hidden md:hidden mt-[40px]">
@@ -47,7 +47,7 @@ const Pricing = () => {
                 Buy Now
               </button>
             </div>
-            <p className="ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
+            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
              bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
@@ -63,7 +63,7 @@ const Pricing = () => {
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
-            <p className="ml-[30px] mt-[20px] text-[20px] font-medium">Executive Package</p>
+            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Executive Package</p>
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px]
              xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
@@ -79,7 +79,7 @@ const Pricing = () => {
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
-            <p className="ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
+            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
             <div className="mb-[30px] lex flex-col rounded-[10px] justify-between mt-[10px] mx-auto 
               w-[318px] xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
@@ -97,18 +97,18 @@ const Pricing = () => {
             </div>
           </div>
           {/* Soundbox without screen */}
-          <div className="w-[338px] xl:w-[517px] mt-[50px] mb-10 xl:mb-0 xl:mt-0 
-          md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2">
-            <div className="flex flex-col items-center">
+          <div className="w-[338px] xl:w-[517px] mt-[50px] mb-10 xl:mb-0 md:mt-0 
+          md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2 md:mb-0">
+            <div className="flex flex-col items-center justify-center">
               <div className="mt-[30px]"><img src={require("../pictures/yep-soundbox2.png")}/></div>
-              <h2 className="text-[24px] font-[500]">
-                Yep! Soundbox without screen
+              <h2 className="text-[24px] font-[500] text-center">
+                Yep! Soundbox with screen
               </h2>
               <button className="mt-[20px] py-[15px] px-[122px] xl:px-[188px] text-blue border rounded-[5px] border-blue">
                 Buy Now
               </button>
             </div>
-            <p className="ml-[30px] mt-[20px] text-[20px] font-medium ">Deluxe Package</p>
+            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium ">Deluxe Package</p>
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
              bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
@@ -124,7 +124,7 @@ const Pricing = () => {
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
-            <p className="ml-[30px] mt-[20px] text-[20px] font-medium">Executive Package</p>
+            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Executive Package</p>
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px]
             xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
@@ -140,7 +140,7 @@ const Pricing = () => {
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
-            <p className="ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
+            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
             <div className="mb-[30px] flex flex-col rounded-[10px] justify-between mt-[10px] 
               mx-auto w-[318px] xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
@@ -160,10 +160,10 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="xl:ml-[80px] md:ml-[20px] w-[368px] items-center 
+      <div className="xl:ml-[80px] md:ml-[20px] w-[368px] 
          xl:mx-0 md:w-full mt-[100px] space-y-[80px]">
-        <h1 className="text-[40px] font-[700] ml-4 md:ml-0">How it works</h1>
-        <div className="flex items-center xl:items-start xl:justify-start 
+        <h1 className="text-[40px] font-[700] ml-4 md:ml-0 flex justify-start">How it works</h1>
+        <div className="flex justify-center items-center 
           md:flex-row  xl:flex-row flex-col space-y-[30px]
            md:space-y-0 xl:space-y-0 xl:space-x-[50px]">
           <div className="ml-4 md:ml-0">
@@ -174,10 +174,10 @@ const Pricing = () => {
               />
             </div>
             <h1 className="text-[26px] font-[700] mt-[30px]">Step 1</h1>
-            <div className="text-[18px]  xl:text-[20px] font-[450] mt-[29px]">
-              Customers makes a transfer of<br className="hidden md:block xl:hidden"/> the required
-              <br className="hidden md:hidden xl:block"/> amount to the merchant's account
-              <br className="hidden md:block" /> displayed on the soundbox.
+            <div className="text-[18px] whitespace-nowrap xl:text-[20px] font-[450] mt-[29px]">
+              Customers makes a transfer of<br/> the required
+               amount to the<br /> merchant's account
+              <br /> displayed on the soundbox.
             </div>
           </div>
           <div className="">
