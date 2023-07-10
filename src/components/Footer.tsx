@@ -28,10 +28,10 @@ const Footer = () => {
             <div className="xl:ml-[80px] mt-[80px] xl:mt-[150px] flex 
             flex-col    ">
                 <h1 className="text-[32px] w-[368px] xl:w-[529px] 
-                 leading-[40px] ml-[5px] xl:leading-normal xl:text-[40px] font-[700]">
+                 leading-[40px] ml-[10px] xl:leading-normal xl:text-[40px] font-[700]">
                     Got Questions?<br/>Sure We Can Answer <br className="xl:hidden"/> Them.
                 </h1>
-                <p className="text-[18px] ml-[20px] mt-[20px] xl:text-[20px] font-[450]"> 
+                <p className="text-[18px] ml-[10px] mt-[20px] xl:text-[20px] font-[450]"> 
                     We answered questions so you don't have to<br className="xl:hidden"/> ask them.
                 </p>
                 <Accordion handleLinkClick={handleLinkClick}
