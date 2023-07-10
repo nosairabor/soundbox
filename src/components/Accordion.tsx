@@ -13,7 +13,7 @@ const Accordion: React.FC<PropTypes> = ({
   handleLinkClick,
 }) => {
   return (
-    <div className="mx-auto mt-[50px] w-[360px] md:w-[720px] xl:w-[1230px] cursor-pointer">
+    <div className="mx-auto mt-[50px] w-[360px] md:mx-auto md:p-2 xl:p-0 w-full md:max-w-[1230px] cursor-pointer">
       <div
         className={`flex justify-between text-[20px] xl:text-[24px] border-grey 
           border-t py-[30px] ${activeLink === 0 ? "text-blue" : ""}`}

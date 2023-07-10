@@ -184,7 +184,7 @@ const Home = () => {
       <div className=" md:ml-[20px] flex flex-col justify-center
           md:w-full mt-[100px] space-y-[80px]"
       >
-        <h1 className="text-[40px] font-[700] ml-4 md:ml-[80px]">How it works</h1>
+        <h1 className="text-[40px] font-[700] ml-4 ">How it works</h1>
         <div className="flex items-center justify-center  
           md:flex-row  flex-col items-center space-y-[30px]
            md:space-y-0 xl:space-y-0 xl:space-x-[50px]">

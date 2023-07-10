@@ -40,8 +40,8 @@ const Footer = () => {
                 />
             </div>
 
-            <div className="text-white mt-[80px] flex flex-col  xl:flex-row">
-                <div className="xl:w-[786px] xl:h-[800px] h-[729px] w-full bg-blue ">
+            <div className="text-white mt-[80px] flex flex-col justify-center  xl:flex-row">
+                <div className="w-full xl:max-w-[850px] xl:h-[800px] h-[729px] bg-blue ">
                     <h1 className="xl:ml-[70px] mt-[50px] ml-[30px] xl:ml-0 text-[32px] xl:mt-[100px]
                         xl:text-[60px] font-[700]">
                         Join other<br/> merchants on the<br/> Yep! Side of Life.
@@ -68,9 +68,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex xl:block h-[486.2px] md:h-[850.2px] xl:w-[742px] xl:h-[824px]">
+                <div className="w-full h-[486.2px] md:h-[850.2px] xl:max-w-[742px] xl:h-[824px]">
                     <img src={require('../pictures/image1500.png')} alt="image1500.png"
-                    className="md:grow xl:grow-0 "/>
+                    className=""/>
                 </div>
             </div>
 
