@@ -14,7 +14,7 @@ const Navbar = () => {
         setNav(false);
     };
     const toggleHamburger = () => {
-        setHamburger(!hamburger);
+        setHamburger(prevHamburger => !prevHamburger);
     };
     return (
         <div className="relative z-[100]">
@@ -80,7 +80,9 @@ const Navbar = () => {
                 </div>
                 
             </div>
-            <div className={`mobile-nav mt-5 text-[18px] h-[393px]  w-full bg-white ${hamburger?"block":"hidden"} xl:hidden` }>
+            {/* Mobile Nav */}
+            <div className={`mobile-nav  text-[18px] h-[393px]  w-full bg-white  ${hamburger?"block":"hidden"} xl:hidden` }>
+                <div className="sm:flex sm:flex-col items-center">
                     <div className="p-3">
                         <Link to="/about" 
                             className={`ml-[10px] ${
@@ -126,14 +128,16 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="p-3 mt-5 mx-auto text-center md:mx-0 text-blue md:ml-5 
-                        border-blue border rounded-lg h-[56px] w-[355px]">
+                        border-blue border rounded-lg h-[56px] w-[355px]
+                        sm:w-full sm:max-w-[600px]">
                         Sign In
                     </div>
                     <div className="mx-auto md:mx-0 mt-5 text-center text-white md:ml-5 
-                        bg-blue border-blue border rounded-lg py-3 w-[355px]">
+                        bg-blue border-blue border rounded-lg py-3 w-[355px]
+                        sm:w-full sm:max-w-[600px]">
                         Create Account
                     </div>
-
+                </div>
             </div>
         </div>
     );
