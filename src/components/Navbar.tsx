@@ -82,7 +82,7 @@ const Navbar = () => {
             </div>
             {/* Mobile Nav */}
             <div className={`mobile-nav  text-[18px] h-[393px]  w-full bg-white  ${hamburger?"block":"hidden"} xl:hidden` }>
-                <div className="sm:flex sm:flex-col items-center">
+                <div className="sm:flex sm:flex-col sm:items-center">
                     <div className="p-3">
                         <Link to="/about" 
                             className={`ml-[10px] ${
