@@ -73,7 +73,6 @@ const Home = () => {
               <h1 className="text-[26px] font-bold">Reduce Overhead Costs</h1>
               <p className="text-secondary leading-[25px] mt-1 font-[450] xl:leading-[20px]">
                 Staff no longer have to call or message you to
-                <br />
                 confirm payments. Soundbox will notify them
               </p>
             </div>
