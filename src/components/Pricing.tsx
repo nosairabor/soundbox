@@ -160,12 +160,12 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className=" md:ml-[20px] flex flex-col justify-center
+      <div className="  flex flex-col justify-center
           md:w-full mt-[100px] space-y-[80px]"
       >
-        <h1 className="text-[40px] font-[700] ml-2 xl:ml-[60px]">How it works</h1>
-        <div className="flex items-center justify-center  
-          md:flex-row  flex-col items-center space-y-[30px]
+        <h1 className="text-[40px] font-[700] ml-3 xl:ml-[80px]">How it works</h1>
+        <div className="flex xl:ml-[79px] xxl:justify-center  
+          md:flex-row  flex-col ml-3 xl:ml-0 space-y-[30px]
            md:space-y-0 xl:space-y-0 xl:space-x-[50px]">
           <div className=" width-full max-w-[368px] ">
             <div className="">
@@ -196,7 +196,7 @@ const Pricing = () => {
                amount.
             </div>
           </div>
-          <div className="-translate-y-[20px]">
+          <div className="">
             <div className="">
               <img
                 src={require("../pictures/check-marks.png")}
