@@ -109,7 +109,7 @@ const Home = () => {
           />
           <div
             className="absolute flex justify-center items-center
-            right-[75px] bottom-[95px] w-[159px] h-[54px] md:bottom-[130px] xl:right-[70px]
+            right-[65px] bottom-[95px] w-[159px] h-[54px] md:bottom-[130px] xl:right-[70px]
               md:right-[275px]  bg-white xl:w-[289px] xl:h-[98px] rounded-[25px]"
           >
             <div className="bg-[#34A853] rounded-[100px] w-[32.81px] h-[32.81px] xl:w-[59px] xl:h-[59px] flex items-center justify-center">
