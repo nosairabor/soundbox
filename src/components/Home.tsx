@@ -60,7 +60,7 @@ const Home = () => {
         <div className="bg-[#E1EBFB] w-full max-w-[368px] md:max-w-[863px] 
           h-full rounded-xl p-5">
           <p className="text-[18px] text-blue ">Security</p>
-          <div className=" flex xl:justify-end py-1 xl:pr-7 xl:translate-y-[12px]">
+          <div className=" flex xl:justify-end py-2 xl:pr-7 xl:translate-y-[12px]">
               <img
                 src={require("../pictures/percentage.png")}
                 className="pic bg-[#E1EBFB] w-full max-w-[200px] h-[217px] "
@@ -72,8 +72,8 @@ const Home = () => {
             <div className=" mt-1">
               <h1 className="text-[26px] font-bold">Reduce Overhead Costs</h1>
               <p className="text-secondary leading-[25px] mt-1 font-[450] xl:leading-[20px]">
-                Staff no longer have to call or message you to
-                confirm payments. Soundbox will notify them
+                Staff no longer have to call or message you to <br className="hidden sm:block" /> 
+                 confirm payments. Soundbox will notify them
               </p>
             </div>
             
