@@ -108,7 +108,7 @@ const Pricing = () => {
                 Buy Now
               </button>
             </div>
-            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium ">Deluxe Package</p>
+            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
              bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
