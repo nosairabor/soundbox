@@ -18,7 +18,7 @@ const Pricing = () => {
         <img src={require("../pictures/pricing2.png")} />
       </div>
 
-      <div className="w-[368px] flex flex-col mx-auto xl:w-full  rounded-xl xl:rounded-none">
+      <div className="flex flex-col mx-auto xl:w-full  rounded-xl xl:rounded-none">
         <div className="hidden md:block xl:block mt-[40px] xl:mt-[100px]">
           <h2 className="text-center text-[26px] text-blue">
             Product Packages
@@ -28,8 +28,8 @@ const Pricing = () => {
           </p>
         </div>
         <div className="mt-[40px] xl:mt-[80px] flex flex-col md:flex-row xl:flex-row items-center justify-center gap-x-[30px]">
-          <div className="w-[338px] 
-            xl:w-[517px] md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2">
+          <div className="w-full max-w-[338px] 
+            xl:max-w-[517px] md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2">
             <div className="flex flex-col items-center">
               <div className="xl:hidden md:hidden mt-[40px]">
                 <h2 className="text-center text-[26px] text-blue">
@@ -51,15 +51,15 @@ const Pricing = () => {
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
              bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
-                <p className="">Upfront Payment</p>
+                <p className="text-secondary font-[450]">Upfront Payment</p>
                 <p>N40,800</p>
               </div>
               <div className="flex justify-between border-b border-grey p-3">
-                <p>Monthly Payment</p>
+                <p className="text-secondary font-[450]">Monthly Payment</p>
                 <p>N0.00</p>
               </div>
               <div className="flex justify-between p-3">
-                <p>Convenience Fee<br/>(Per transaction)</p>
+                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
@@ -67,15 +67,15 @@ const Pricing = () => {
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px]
              xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
-                <p className="">Initiate Payment</p>
+                <p className="text-secondary font-[450]">Initiate Payment</p>
                 <p>N25,000</p>
               </div>
               <div className="flex justify-between border-b border-grey p-3">
-                <p>Monthly Payment (12 months)</p>
+                <p className="text-secondary font-[450]">Monthly Payment (12 months)</p>
                 <p>N2540.67</p>
               </div>
               <div className="flex justify-between p-3">
-                <p>Convenience Fee<br/>(Per transaction)</p>
+                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
@@ -83,21 +83,21 @@ const Pricing = () => {
             <div className="mb-[30px] lex flex-col rounded-[10px] justify-between mt-[10px] mx-auto 
               w-[318px] xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
-                <p className="">Initiate Payment</p>
+                <p className="text-secondary font-[450]">Initiate Payment</p>
                 <p>Not applicable</p>
               </div>
               <div className="flex justify-between border-b border-grey p-3">
-                <p>Monthly Payment</p>
+                <p className="text-secondary font-[450]">Monthly Payment</p>
                 <p>Not applicable</p>
               </div>
               <div className="flex justify-between p-3">
-                <p>Convenience Fee<br/>(Per transaction)</p>
+                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
                 <p className="pt-2">Not applicable</p>
               </div>
             </div>
           </div>
           {/* Soundbox without screen */}
-          <div className="w-[338px] xl:w-[517px] mt-[50px] mb-10 xl:mb-0 md:mt-0 
+          <div className="w-full max-w-[338px]  xl:max-w-[517px] mt-[50px] mb-10 xl:mb-0 md:mt-0 
           md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2 md:mb-0">
             <div className="flex flex-col items-center justify-center">
               <div className="mt-[30px]"><img src={require("../pictures/yep-soundbox2.png")}/></div>
@@ -112,15 +112,15 @@ const Pricing = () => {
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
              bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
-                <p className="">Upfront Payment</p>
+                <p className="text-secondary font-[450]">Upfront Payment</p>
                 <p>N30.00</p>
               </div>
               <div className="flex justify-between border-b border-grey p-3">
-                <p>Monthly Payment</p>
+                <p className="text-secondary font-[450]">Monthly Payment</p>
                 <p>N0.00</p>
               </div>
               <div className="flex justify-between p-3">
-                <p>Convenience Fee<br/>(Per transaction)</p>
+                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
@@ -128,15 +128,15 @@ const Pricing = () => {
             <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px]
             xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
-                <p className="">Initiate Payment</p>
+                <p className="text-secondary font-[450]">Initiate Payment</p>
                 <p>N15,000</p>
               </div>
               <div className="flex justify-between border-b border-grey p-3">
-                <p>Monthly Payment(12 months)</p>
+                <p className="text-secondary font-[450]">Monthly Payment(12 months)</p>
                 <p>N2150.00</p>
               </div>
               <div className="flex justify-between p-3">
-                <p>Convenience Fee<br/>(Per transaction)</p>
+                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
@@ -144,15 +144,15 @@ const Pricing = () => {
             <div className="mb-[30px] flex flex-col rounded-[10px] justify-between mt-[10px] 
               mx-auto w-[318px] xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
               <div className="flex justify-between border-b border-grey p-4">
-                <p className="">Initiate Payment</p>
+                <p className="text-secondary font-[450]">Initiate Payment</p>
                 <p>N5,000</p>
               </div>
               <div className="flex justify-between border-b border-grey p-3">
-                <p>Monthly Payment</p>
+                <p className="text-secondary font-[450]">Monthly Payment</p>
                 <p>N3,400</p>
               </div>
               <div className="flex justify-between p-3">
-                <p>Convenience Fee<br/>(Per transaction)</p>
+                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
                 <p className="pt-2">N20.00</p>
               </div>
             </div>
