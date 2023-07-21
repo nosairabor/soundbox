@@ -13,7 +13,7 @@ const Accordion: React.FC<PropTypes> = ({
   handleLinkClick,
 }) => {
   return (
-    <div className="mx-auto mt-[50px] max-w-[767px] md:mx-auto p-2 xl:p-0 w-full md:max-w-[1230px] cursor-pointer">
+    <div className="mt-[50px] px-3 xl:px-4 mx-auto max-w-[767px]  p-2 xl:p-0 w-full md:max-w-[1230px] cursor-pointer">
       <div
         className={`flex justify-between text-[20px] xl:text-[24px] border-grey 
           border-t py-[30px] ${activeLink === 0 ? "text-blue" : ""}`}
@@ -27,7 +27,7 @@ const Accordion: React.FC<PropTypes> = ({
       <div className="">
         {isOpen[0] ? (
           <div className="accordion-transition">
-            <p className="text-[18px] xl:text-[20px] font-[400] pb-4">
+            <p className="text-secondary text-[18px] xl:text-[20px] font-[400] pb-4">
               Lörem ipsum sor exossade eurohår, i spen. Var semiskop jag ägärat
               etreliga labelt.
               <br />
@@ -51,7 +51,7 @@ const Accordion: React.FC<PropTypes> = ({
       <div className="">
         {isOpen[1] ? (
           <div className="accordion-transition">
-            <p className="text-[18px] xl:text-[20px] font-[400] pb-4">
+            <p className="text-secondary text-[18px] xl:text-[20px] font-[400] pb-4">
               Lörem ipsum sor exossade eurohår, i spen. Var semiskop jag ägärat
               etreliga labelt.
               <br />
@@ -75,7 +75,7 @@ const Accordion: React.FC<PropTypes> = ({
       <div className="">
         {isOpen[2] ? (
           <div className="accordion-transition">
-            <p className="text-[18px] xl:text-[20px] font-[400] pb-4">
+            <p className="text-secondary text-[18px] xl:text-[20px] font-[400] pb-4">
               Lörem ipsum sor exossade eurohår, i spen. Var semiskop jag ägärat
               etreliga labelt.
               <br />
@@ -99,7 +99,7 @@ const Accordion: React.FC<PropTypes> = ({
       <div className="">
         {isOpen[3] ? (
           <div className="accordion-transition">
-            <p className="text-[18px] xl:text-[20px] font-[400] pb-4">
+            <p className="text-secondary text-[18px] xl:text-[20px] font-[400] pb-4">
               Lörem ipsum sor exossade eurohår, i spen. Var semiskop jag ägärat
               etreliga labelt.
               <br />
@@ -123,7 +123,7 @@ const Accordion: React.FC<PropTypes> = ({
       <div className="">
         {isOpen[4] ? (
           <div className="accordion-transition">
-            <p className="text-[18px] xl:text-[20px] font-[400] pb-4">
+            <p className="text-secondary text-[18px] xl:text-[20px] font-[400] pb-4">
               Lörem ipsum sor exossade eurohår, i spen. Var semiskop jag ägärat
               etreliga labelt.
               <br />
@@ -147,7 +147,7 @@ const Accordion: React.FC<PropTypes> = ({
       <div className="">
         {isOpen[5] ? (
           <div className="accordion-transition">
-            <p className="text-[18px] xl:text-[20px] font-[400] pb-4">
+            <p className="text-secondary text-[18px] xl:text-[20px] font-[400] pb-4">
               Lörem ipsum sor exossade eurohår, i spen. Var semiskop jag ägärat
               etreliga labelt.
               <br />
@@ -175,7 +175,7 @@ const Accordion: React.FC<PropTypes> = ({
           <div className="accordion-transition">
             <p
               className="text-[18px] xl:text-[20px] font-[400] pb-4 border-grey 
-                                    border-b"
+              text-secondary border-b"
             >
               Lörem ipsum sor exossade eurohår, i spen. Var semiskop jag ägärat
               etreliga labelt.

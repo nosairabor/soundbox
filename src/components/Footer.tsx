@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Accordion from "./Accordion";
 import {GoArrowUpRight} from "react-icons/go"
-import { BsChevronDown } from "react-icons/bs";
+import { BsChevronDown } from "react-icons/bs";   
 import {AiFillFacebook} from "react-icons/ai"
 import {AiFillInstagram} from "react-icons/ai"
 import {AiOutlineTwitter} from "react-icons/ai"
@@ -25,14 +25,16 @@ const Footer = () => {
 
     return (
         <div className="circular-font">
-            <div className=" mt-[80px] xl:mt-[150px] flex 
-            flex-col    ">
-                <div className="">
+            <div className="px-3 md:px-8 xl:px-0 mt-[80px] xl:mt-[150px] flex 
+            flex-col">
+                
+                <div className="mx-auto max-w-[368px] sm:max-w-[767px]   xl:p-2 w-full md:max-w-[1230px]">
                     <h1 className="text-[32px] max-w-[368px] xl:max-w-[529px] 
-                    leading-[40px] ml-3 xl:ml-[79px] xl:leading-normal xl:text-[40px] font-[700]">
+                    leading-[40px]  xl:leading-normal xl:text-[40px] font-[700]">
                         Got Questions?<br/>Sure We Can Answer <br className="xl:hidden"/> Them.
                     </h1>
-                    <p className="text-[18px] ml-3 xl:ml-[79px] mt-[20px] xl:text-[20px] font-[450]"> 
+                    <p className="text-secondary text-[18px]  mt-[20px]
+                     xl:text-[20px] font-[450]"> 
                         We answered questions so you don't have to ask them.
                     </p>
                 </div>
@@ -40,10 +42,11 @@ const Footer = () => {
                     isOpen={isOpen}
                     activeLink={activeLink}
                 />
+                
             </div>
 
             <div className="text-white mt-[80px] flex flex-col justify-center  xl:flex-row">
-                <div className="w-full xl:max-w-[850px] xl:h-[824px] h-[729px] bg-blue ">
+                <div className="px-3 md:px-0 w-full xl:max-w-[850px] xl:h-[824px] h-[729px] bg-blue ">
                     <h1 className="xl:ml-[40px] mt-[50px] ml-3 xl:ml-0 text-[32px] xl:mt-[100px]
                         xl:text-[60px] font-[700]">
                         Join other<br/> merchants on the<br/> Yep! Side of Life.
@@ -127,28 +130,28 @@ const Footer = () => {
                 <div className="hidden xl:flex mx-[105px] justify-between pb-[50px]">
                     <div className="flex space-x-[6px]">
                         <IoMail className="mt-[2px] text-blue text-[26px]"/>
-                        <p className="text-[20px] font-[450]">hello@getyep.co</p>
+                        <p className="text-secondary text-[20px] font-[450]">hello@getyep.co</p>
                     </div>
                     <div className="flex space-x-[50px]">
                         <div className="flex space-x-[6px]">
                             <AiFillFacebook className="mt-[2px] text-blue text-[26px]"/>
-                            <p className="text-[20px] font-[450]">Facebook</p>
+                            <p className="text-secondary text-[20px] font-[450]">Facebook</p>
                         </div>
                         <div className="flex space-x-[6px]">
                             <AiFillInstagram className="mt-[2px] text-blue text-[26px]"/>
-                            <p className="text-[20px] font-[450]">Instagram</p>
+                            <p className="text-secondary text-[20px] font-[450]">Instagram</p>
                         </div>
                         <div className="flex space-x-[6px]">
                             <AiOutlineTwitter className="mt-[2px] text-blue text-[26px]"/>
-                            <p className="text-[20px] font-[450]">Twitter</p>
+                            <p className="text-secondary text-[20px] font-[450]">Twitter</p>
                         </div>
                         <div className="flex space-x-[6px]">
                             <AiFillLinkedin className="mt-[2px] text-blue text-[26px]"/>
-                            <p className="text-[20px] font-[450]">LinkedIn</p>
+                            <p className="text-secondary text-[20px] font-[450]">LinkedIn</p>
                         </div>
                         <div className="flex space-x-[6px]">
                             <AiFillYoutube className="mt-[2px] text-blue text-[26px]"/>
-                            <p className="text-[20px] font-[450]">YouTube</p>
+                            <p className="text-secondary text-[20px] font-[450]">YouTube</p>
                         </div>
                     </div>
                 </div>

@@ -105,42 +105,42 @@ const FooterAccordion:React.FC<PropTypes> = ({
                 <div className="flex justify-between">
                     <div className="flex space-x-3">
                         <IoMail className="mt-[2px] text-blue text-[26px]"/>
-                        <p className="text-[20px] font-[450]">hello@getyep.co</p>
+                        <p className="text-secondary text-[20px] font-[450]">hello@getyep.co</p>
                     </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
                     <div className="flex space-x-3">
                         <AiFillFacebook className="mt-[2px] text-blue text-[26px]"/>
-                        <p className="text-[20px] font-[450]">Facebook</p>
+                        <p className="text-secondary text-[20px] font-[450]">Facebook</p>
                     </div>
                    <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
                     <div className="flex space-x-3">
                         <AiFillInstagram className="mt-[2px] text-blue text-[26px]"/>
-                        <p className="text-[20px] font-[450]">Instagram</p>
+                        <p className="text-secondary text-[20px] font-[450]">Instagram</p>
                     </div>
                    <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
                     <div className="flex space-x-3">
                         <AiOutlineTwitter className="mt-[2px] text-blue text-[26px]"/>
-                        <p className="text-[20px] font-[450]">Twitter</p>
+                        <p className="text-secondary text-[20px] font-[450]">Twitter</p>
                     </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
                     <div className="flex space-x-3">
                         <AiFillLinkedin className="mt-[2px] text-blue text-[26px]"/>
-                        <p className="text-[20px] font-[450]">LinkedIn</p>
+                        <p className="text-secondary text-[20px] font-[450]">LinkedIn</p>
                     </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
                 <div className="flex justify-between">
                     <div className="flex space-x-3">
                         <AiFillYoutube className="mt-[2px] text-blue text-[26px]"/>
-                        <p className="text-[20px] font-[450]">YouTube</p>
+                        <p className="text-secondary text-[20px] font-[450]">YouTube</p>
                     </div>
                     <BsChevronRight className="mt-1 text-[20px]"/>
                 </div>
