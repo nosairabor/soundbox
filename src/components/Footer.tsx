@@ -25,7 +25,7 @@ const Footer = () => {
 
     return (
         <div className="circular-font">
-            <div className="px-5 md:px-8 xl:px-0 mt-[80px] xl:mt-[150px] flex 
+            <div className="px-3 md:px-8 xl:px-0 mt-[80px] xl:mt-[150px] flex 
             flex-col">
                 
                 <div className="mx-auto max-w-[368px] sm:max-w-[767px]   xl:p-2 w-full md:max-w-[1230px]">
@@ -46,17 +46,17 @@ const Footer = () => {
             </div>
 
             <div className="text-white mt-[80px] flex flex-col justify-center  xl:flex-row">
-                <div className="px-3 md:px-0 w-full xl:max-w-[850px] xl:h-[824px] h-[729px] bg-blue ">
-                    <h1 className="xl:ml-[40px] mt-[50px] ml-3 xl:ml-0 text-[32px] xl:mt-[100px]
+                <div className="px-3 md:px-0 w-full xl:max-w-[850px] xl:h-[824px] h-[729px] bg-blue">
+                    <h1 className="xl:ml-[40px] mt-[50px] xl:ml-0 text-[32px] xl:mt-[100px]
                         xl:text-[60px] font-[700]">
                         Join other<br/> merchants on the<br/> Yep! Side of Life.
                     </h1>
-                    <p className="mt-[40px] ml-3 flex flex-col text-[18px] xl:ml-[40px] xl:text-[26px] font-[450]">
+                    <p className="mt-[40px] flex flex-col text-[18px] xl:ml-[40px] xl:text-[26px] font-[450]">
                     No more checking of phones every few<br className="xl:hidden"/> minutes, no <br className="hidden xl:block"/>
                     more missed payments, and no more panic from<br className="hidden xl:block"/> 
                     delayed payment<br className="xl:hidden"/> confirmation!
                     </p>
-                    <div className="flex flex-col ml-3 space-y-[20px] 
+                    <div className="flex flex-col space-y-[20px] 
                         xl:space-y-0 xl:flex-row xl:space-x-10 xl:ml-[40px] mt-[40px]"
                     >
                         <div>
