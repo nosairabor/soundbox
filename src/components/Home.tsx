@@ -62,7 +62,7 @@ const Home = () => {
       </div>
 
       <section className="flex flex-col space-y-[20px] md:justify-center 
-         md:flex-row md:space-x-4 mx-[25px]  xl:mx-[105px]   xl:space-y-0
+         md:flex-row md:space-x-4 mx-[15px]  xl:mx-[105px]   xl:space-y-0
          xl:space-x-[30px] mt-[60px] "
       >
         <div className={`flex flex-col bg-[#E1EBFB] 
