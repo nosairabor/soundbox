@@ -170,7 +170,7 @@ const Home = () => {
       </section>
 
       <section className="  flex flex-col 
-        px-3 xl:px-0 md:px-8 md:w-full mt-[100px] "
+        px-5 xl:px-0 md:px-8 md:w-full mt-[100px] "
       >
         <div className="self-center space-y-[80px]">
         <h1 className="text-[40px] font-[700] ">How it works</h1>
