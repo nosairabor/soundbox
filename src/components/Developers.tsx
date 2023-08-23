@@ -74,8 +74,8 @@ const Developers = () => {
                 <div className="">
                     <img
                         src={require("../pictures/sls-1.png")}
-                        className="rounded-t-lg md:rounded-l-lg 
-                        xl:rounded-l-[18.2px] w-full max-w-[368px] h-[250px]
+                        className="rounded-tr-lg rounded-tl-lg md:rounded-l-lg 
+                        xl:rounded-l-[18.2px] xl:rounded-tr-none  w-full max-w-[368px] h-[250px]
                         xl:h-full h-full"
                         alt=""
                     />

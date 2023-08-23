@@ -1,3 +1,5 @@
+import HowItWorks from "./HowItWorks";
+import PricingReusable from "./PricingReusable";
 
 
 const Pricing = () => {
@@ -28,191 +30,47 @@ const Pricing = () => {
           </p>
         </div>
         <div className="mt-[40px] xl:mt-[80px] flex flex-col md:flex-row xl:flex-row items-center justify-center gap-x-[30px]">
-          <div className="w-full max-w-[338px] 
-            xl:max-w-[517px] md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2">
-            <div className="flex flex-col items-center">
-              <div className="xl:hidden md:hidden mt-[40px]">
-                <h2 className="text-center text-[26px] text-blue">
-                  Product Packages
-                </h2>
-                <p className="text-center text-[20px] mt-[20px]">
-                  Everything you need to know about the SoundBox devices.
-                </p>
-              </div>
-              <div className="mt-[30px]"><img src={require("../pictures/yep-soundbox1.png")}/></div>
-              <h2 className="text-[24px] font-[500]">
-                Yep! Soundbox with screen
+          
+          <PricingReusable
+            title="Yep! Soundbox with screen"
+            imageUrl={require('../pictures/yep-soundbox2.png')}
+            upfrontPayment="N40,800"
+            monthlyPayment1="N0.00"
+            convenienceFee1="N20.00"
+            initiatePayment1="N25,000"
+            monthlyPayment2="N2540.67"
+            convenienceFee2="N20.00"
+            initiatePayment2="Not applicable"
+            monthlyPayment3="Not applicable"
+            convenienceFee3="Not applicable"
+          >
+            <div className="xl:hidden md:hidden mt-[40px]">
+              <h2 className="text-center text-[26px] text-blue">
+                Product Packages
               </h2>
-              <button className="mt-[20px] py-[15px] px-[122px] xl:px-[188px] text-blue border rounded-[5px] border-blue">
-                Buy Now
-              </button>
+              <p className="text-center text-[20px] mt-[20px]">
+                Everything you need to know about the SoundBox devices.
+              </p>
             </div>
-            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
-            <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
-             bg-[#F4F6F8] h-[188px] font-[450]">
-              <div className="flex justify-between border-b border-grey p-4">
-                <p className="text-secondary font-[450]">Upfront Payment</p>
-                <p>N40,800</p>
-              </div>
-              <div className="flex justify-between border-b border-grey p-3">
-                <p className="text-secondary font-[450]">Monthly Payment</p>
-                <p>N0.00</p>
-              </div>
-              <div className="flex justify-between p-3">
-                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
-                <p className="pt-2">N20.00</p>
-              </div>
-            </div>
-            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Executive Package</p>
-            <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px]
-             xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
-              <div className="flex justify-between border-b border-grey p-4">
-                <p className="text-secondary font-[450]">Initiate Payment</p>
-                <p>N25,000</p>
-              </div>
-              <div className="flex justify-between border-b border-grey p-3">
-                <p className="text-secondary font-[450]">Monthly Payment (12 months)</p>
-                <p>N2540.67</p>
-              </div>
-              <div className="flex justify-between p-3">
-                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
-                <p className="pt-2">N20.00</p>
-              </div>
-            </div>
-            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
-            <div className="mb-[30px] lex flex-col rounded-[10px] justify-between mt-[10px] mx-auto 
-              w-[318px] xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
-              <div className="flex justify-between border-b border-grey p-4">
-                <p className="text-secondary font-[450]">Initiate Payment</p>
-                <p>Not applicable</p>
-              </div>
-              <div className="flex justify-between border-b border-grey p-3">
-                <p className="text-secondary font-[450]">Monthly Payment</p>
-                <p>Not applicable</p>
-              </div>
-              <div className="flex justify-between p-3">
-                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
-                <p className="pt-2">Not applicable</p>
-              </div>
-            </div>
-          </div>
-          {/* Soundbox without screen */}
-          <div className="w-full max-w-[338px]  xl:max-w-[517px] mt-[50px] mb-10 xl:mb-0 md:mt-0 
-          md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2 md:mb-0">
-            <div className="flex flex-col items-center justify-center">
-              <div className="mt-[30px]"><img src={require("../pictures/yep-soundbox2.png")}/></div>
-              <h2 className="text-[24px] font-[500] text-center">
-                Yep! Soundbox with screen
-              </h2>
-              <button className="mt-[20px] py-[15px] px-[122px] xl:px-[188px] text-blue border rounded-[5px] border-blue">
-                Buy Now
-              </button>
-            </div>
-            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
-            <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
-             bg-[#F4F6F8] h-[188px] font-[450]">
-              <div className="flex justify-between border-b border-grey p-4">
-                <p className="text-secondary font-[450]">Upfront Payment</p>
-                <p>N30.00</p>
-              </div>
-              <div className="flex justify-between border-b border-grey p-3">
-                <p className="text-secondary font-[450]">Monthly Payment</p>
-                <p>N0.00</p>
-              </div>
-              <div className="flex justify-between p-3">
-                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
-                <p className="pt-2">N20.00</p>
-              </div>
-            </div>
-            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Executive Package</p>
-            <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px]
-            xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
-              <div className="flex justify-between border-b border-grey p-4">
-                <p className="text-secondary font-[450]">Initiate Payment</p>
-                <p>N15,000</p>
-              </div>
-              <div className="flex justify-between border-b border-grey p-3">
-                <p className="text-secondary font-[450]">Monthly Payment(12 months)</p>
-                <p>N2150.00</p>
-              </div>
-              <div className="flex justify-between p-3">
-                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
-                <p className="pt-2">N20.00</p>
-              </div>
-            </div>
-            <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
-            <div className="mb-[30px] flex flex-col rounded-[10px] justify-between mt-[10px] 
-              mx-auto w-[318px] xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
-              <div className="flex justify-between border-b border-grey p-4">
-                <p className="text-secondary font-[450]">Initiate Payment</p>
-                <p>N5,000</p>
-              </div>
-              <div className="flex justify-between border-b border-grey p-3">
-                <p className="text-secondary font-[450]">Monthly Payment</p>
-                <p>N3,400</p>
-              </div>
-              <div className="flex justify-between p-3">
-                <p className="text-secondary font-[450]">Convenience Fee<br/>(Per transaction)</p>
-                <p className="pt-2">N20.00</p>
-              </div>
-            </div>
-          </div>
+          </PricingReusable>
+          <PricingReusable
+            title="Yep! Soundbox without screen"
+            imageUrl={require('../pictures/yep-soundbox2.png')}
+            upfrontPayment="N30,000"
+            monthlyPayment1="N0.00"
+            convenienceFee1="N20.00"
+            initiatePayment1="N15,000"
+            monthlyPayment2="N2,150"
+            convenienceFee2="N20.00"
+            initiatePayment2="N5,000"
+            monthlyPayment3="N3,400"
+            convenienceFee3="N20.00"
+          />
         </div>
       </div>
 
-      <div className="  flex flex-col 
-        px-3 xl:px-0 md:px-8 md:w-full mt-[100px] "
-      >
-        <div className="self-center space-y-[80px]">
-        <h1 className="text-[40px] font-[700] ">How it works</h1>
-        <div className="flex    
-          md:flex-row  flex-col space-y-[30px]
-           md:space-y-0 xl:space-y-0 xl:space-x-[50px]">
-          <div className=" width-full max-w-[368px]">
-            <div className="">
-              <img
-                src={require("../pictures/scan.png")}
-                className="text-blue"
-              />
-            </div>
-            <h1 className="text-[26px] font-[700] mt-[30px]">Step 1</h1>
-            <div className="text-secondary text-[18px] width-full max-w-[360px] whitespace-normal xl:text-[20px] font-[450] mt-[29px]">
-              Customers makes a transfer of the required 
-               amount to the merchant's account
-               displayed on the soundbox.
-            </div>
-          </div>
-          <div className="md:ml-[30px] xl:ml-0">
-            <div className="">
-              <img
-                src={require("../pictures/bell-checked.png")}
-                className="text-blue"
-              />
-            </div>
-            <h1 className="text-[26px] font-[700] mt-[30px]">Step 2</h1>
-            <div className="text-secondary text-[18px] whitespace-normal width-full max-w-[360px] xl:text-[20px] font-[450] mt-[29px]">
-              Sound box audibly notifies merchant and
-              
-              customer of payment confirmation and
-               amount.
-            </div>
-          </div>
-          <div className="md:ml-[30px] xl:ml-0">
-            <div className="">
-              <img
-                src={require("../pictures/check-marks.png")}
-                className="text-blue"
-              />
-            </div>
-            <h1 className="text-[26px] font-[700] mt-[30px]">Step 3</h1>
-            <div className="text-secondary text-[18px] width-full max-w-[360px] xl:text-[20px] whitespace-normal font-[450] mt-[29px]">
-              Merchant can confirm that account has
-               been credited.
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
+      <HowItWorks/>
+      
     </div>
   );
 };

@@ -1,22 +1,34 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import HowItWorks from "./HowItWorks";
 
 const Home = () => {
   
-  const [isXlScreen, setIsXlScreen] = useState(false);
-  const [ref, inView] = useInView({
-    triggerOnce:true,
-    threshold:0.2,
+  const [refA, inView] = useInView({
+    
   });
+  const [refB, inViewB] = useInView({
+    
+  });
+  const [isAnimatedB, setIsAnimatedB] = useState(false);
   
-
+  useEffect(() => {
+    
+    if (inViewB || isAnimatedB ) {
+      setIsAnimatedB(true);
+    }
+  }, [inViewB, isAnimatedB]);
   return (
     <div className="circular-font mx-auto">
       <section className="flex items-center justify-center md:gap-[50px]">
         <div className="flex mt-[70px] flex-col justify-center ml-0 md:ml-[40px]   mt-[178px]">
-          <div className="text-[44px] md:mt-[30px] mt-0 xl:mt-0 
-             leading-[49px] xl:text-[60px] font-bold xl:leading-[75.9px]">
+          <div
+            ref={refB} 
+            className={`text-[44px] md:mt-[30px] mt-0 xl:mt-0 
+             leading-[49px] xl:text-[60px] font-bold xl:leading-[75.9px]
+             ${isAnimatedB ? 'animation-header' : ''}`}
+          >
             <span className="header-gradient">Instant & Audible</span>
             <br />
             Notification of
@@ -62,10 +74,12 @@ const Home = () => {
       </div>
 
       <section className="flex flex-col space-y-[20px] md:justify-center 
-         md:flex-row md:space-x-4 mx-[15px]  xl:mx-[105px]   xl:space-y-0
+         md:flex-row md:space-x-4 mx-[15px]  xl:mx-[105px]   md:space-y-0
          xl:space-x-[30px] mt-[60px] "
       >
-        <div className={`flex flex-col bg-[#E1EBFB] 
+        <div 
+        ref={refA}
+        className={`flex flex-col bg-[#E1EBFB] 
             pt-[30px] pb-10 px-10 min-h-[345px] rounded-[20px] 
             xl:max-w-[813px] xl:w-full ${inView?"animation-a":""}` }
         >
@@ -74,7 +88,7 @@ const Home = () => {
             md:justify-between ">
           
             <div className="max-w-[345px] w-full flex flex-col justify-end self-end">
-              <h1 className="text-xl lg:text-[26px] font-bold lg:leading-[32px]">Reduce Overhead Costs</h1>
+              <p className="text-xl lg:text-[26px] font-bold lg:leading-[32px]">Reduce Overhead Costs</p>
               <p className="text-secondary text-sm lg:text-[16px] leading-[25px] mt-4 font-[450] xl:leading-[20px]">
                 Staff no longer have to call or message you to 
                  confirm payments. Soundbox will notify them
@@ -90,7 +104,9 @@ const Home = () => {
           </div>
         </div>
         {/* Value */}
-        <div className={`bg-blue rounded-[20px] text-white flex
+        <div 
+        ref={refA}
+        className={`bg-blue rounded-[20px] text-white flex
           flex-col justify-between pt-[30px] pb-10 px-10 min-h-[345px] ${inView?"animation-b":""}`}
         >
           <p className="text-[18px]">Value</p>
@@ -169,59 +185,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="  flex flex-col 
-        px-2 xl:px-0 md:px-8 md:w-full mt-[100px] "
-      >
-        <div className="self-center space-y-[80px]">
-        <h1 className="text-[40px] font-[700] ">How it works</h1>
-        <div className="flex    
-          md:flex-row  flex-col space-y-[30px]
-           md:space-y-0 xl:space-y-0 xl:space-x-[50px]">
-          <div className=" width-full max-w-[368px]">
-            <div className="">
-              <img
-                src={require("../pictures/scan.png")}
-                className="text-blue"
-              />
-            </div>
-            <h1 className="text-[26px] font-[700] mt-[30px]">Step 1</h1>
-            <div className="text-secondary text-[18px] width-full max-w-[360px] whitespace-normal xl:text-[20px] font-[450] mt-[29px]">
-              Customers makes a transfer of the required 
-               amount to the merchant's account
-               displayed on the soundbox.
-            </div>
-          </div>
-          <div className="md:ml-[30px] xl:ml-0">
-            <div className="">
-              <img
-                src={require("../pictures/bell-checked.png")}
-                className="text-blue"
-              />
-            </div>
-            <h1 className="text-[26px] font-[700] mt-[30px]">Step 2</h1>
-            <div className="text-secondary text-[18px] whitespace-normal width-full max-w-[360px] xl:text-[20px] font-[450] mt-[29px]">
-              Sound box audibly notifies merchant and
-              
-              customer of payment confirmation and
-               amount.
-            </div>
-          </div>
-          <div className="">
-            <div className="">
-              <img
-                src={require("../pictures/check-marks.png")}
-                className="text-blue"
-              />
-            </div>
-            <h1 className="text-[26px] font-[700] mt-[30px]">Step 3</h1>
-            <div className="text-secondary text-[18px] width-full max-w-[360px] xl:text-[20px] whitespace-normal font-[450] mt-[29px]">
-              Merchant can confirm that account has
-               been credited.
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
+      <HowItWorks/>
 
       {/* Accordion */}
       

@@ -68,7 +68,7 @@
     max-height: 1000px;
 }
 }
-/* .animation-a{
+.animation-a{
     animation-duration: 1000ms;
     animation-timing-function: ease;
     animation-delay: 0ms;
@@ -76,7 +76,7 @@
     animation-direction: normal;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-} */
+}
 @keyframes animation-1 {
     0% {
         transform: translate3d(-100%, 0px, 0px);
@@ -86,7 +86,8 @@
         transform: translate3d(0px, 0px, 0px);
     }
 }
-/* .animation-b{
+
+.animation-b{
     animation-duration: 1000ms;
     animation-timing-function: ease;
     animation-delay: 0ms;
@@ -94,7 +95,7 @@
     animation-direction: normal;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-} */
+}
 @keyframes animation-2 {
     0% {
         transform: translate3d(100%, 0px, 0px);
@@ -104,18 +105,23 @@
         transform: translate3d(0px, 0px, 0px);
     }
 }
-.animation-a,
-.animation-b {
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
-}
 
-/* Add animation classes when they are in the viewport */
-.animation-a.visible,
-.animation-b.visible {
-  opacity: 1;
-  animation-duration: 1000ms;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
+.animation-header{
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-delay: 0ms;
+    animation-name: animation-3;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+@keyframes animation-3 {
+    0% {
+        transform: translate3d(0px, -100%, 0px);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
 }
