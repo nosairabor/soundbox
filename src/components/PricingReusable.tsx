@@ -32,7 +32,7 @@ const PricingReusable:React.FC<Props> = ({
 }) => {
 
     return (
-      <div className="w-full max-w-[338px]  xl:max-w-[517px] mt-[50px] mb-10 xl:mb-0 md:mt-0 
+      <div className="w-full max-w-[355px]  xl:max-w-[517px] mt-[50px] mb-10 xl:mb-0 md:mt-0 
       md:border bg-white rounded-[10px] md:border-grey p-0 xl:p-0 md:p-2 md:mb-0"
       >
         

@@ -48,7 +48,7 @@ const Pricing = () => {
               <h2 className="text-center text-[26px] text-blue">
                 Product Packages
               </h2>
-              <p className="text-center text-[20px] mt-[20px]">
+              <p className="p-2 text-center text-[20px] mt-[20px]">
                 Everything you need to know about the SoundBox devices.
               </p>
             </div>

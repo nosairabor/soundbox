@@ -11,35 +11,44 @@ const Home = () => {
   const [refB, inViewB] = useInView({
     
   });
-  const [isAnimatedB, setIsAnimatedB] = useState(false);
-  
-  useEffect(() => {
+  const [refC, inViewC] = useInView({
     
-    if (inViewB || isAnimatedB ) {
-      setIsAnimatedB(true);
-    }
-  }, [inViewB, isAnimatedB]);
+  });
+  const [refD, inViewD] = useInView({
+
+  });
+  // const [refB, inViewB] = useInView({
+    
+  // });
+  // const [isAnimatedB, setIsAnimatedB] = useState(false);
+  
+  // useEffect(() => {
+    
+  //   if (inViewB || isAnimatedB ) {
+  //     setIsAnimatedB(true);
+  //   }
+  // }, [inViewB, isAnimatedB]);
   return (
     <div className="circular-font mx-auto">
       <section className="flex items-center justify-center md:gap-[50px]">
         <div className="flex mt-[70px] flex-col justify-center ml-0 md:ml-[40px]   mt-[178px]">
           <div
-            ref={refB} 
+            ref={refC} 
             className={`text-[44px] md:mt-[30px] mt-0 xl:mt-0 
              leading-[49px] xl:text-[60px] font-bold xl:leading-[75.9px]
-             ${isAnimatedB ? 'animation-header' : ''}`}
+             ${inViewC?"animation-header":""}`}
           >
             <span className="header-gradient">Instant & Audible</span>
             <br />
             Notification of
             <br /> Payments
           </div>
-          <div className="text-secondary mt-[30px] text-[18px] xl:mt-[40px]   xl:text-[20px]  md:ml-0 font-[450] leading-[26px]">
+          <div ref={refB} className={`text-secondary mt-[30px] text-[18px] xl:mt-[40px]   xl:text-[20px]  md:ml-0 font-[450] leading-[26px] ${inViewB?"animation-header":""}`}>
             Now you no longer have to keep customers
             <br /> waiting. Soundbox confirms payments
             <br /> instantly and audibly.
           </div>
-          <div className="flex space-x-[20px] text-[16px] mt-[40px] ">
+          <div ref={refD} className={`flex space-x-[20px] text-[16px] mt-[40px] ${inViewD?"animation-header":""}`} >
             <div
               className="w-[154px] h-[45px] py-2  border border-blue font-medium rounded-[100px] bg-blue 
               text-center text-white xl:px-[20px] xl:py-[13px] xl:w-[auto] xl:h-[auto]"
@@ -74,7 +83,7 @@ const Home = () => {
       </div>
 
       <section className="flex flex-col space-y-[20px] md:justify-center 
-         md:flex-row md:space-x-4 mx-[15px]  xl:mx-[105px]   md:space-y-0
+         md:flex-row md:space-x-4 mx-[20px]  xl:mx-[105px]   md:space-y-0
          xl:space-x-[30px] mt-[60px] "
       >
         <div 
