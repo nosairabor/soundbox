@@ -26,7 +26,7 @@ const Footer = () => {
     return (
         <div className="circular-font">
             <div className="px-2 md:px-8 xl:px-0 mt-[80px] xl:mt-[150px] flex 
-            flex-col">
+            flex-col px-5">
                 
                 <div className="mx-auto max-w-[368px] sm:max-w-[767px]   xl:p-2 w-full md:max-w-[1230px]">
                     <h1 className="text-[32px] max-w-[368px] xl:max-w-[529px] 

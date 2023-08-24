@@ -48,7 +48,7 @@ const PricingReusable:React.FC<Props> = ({
             Buy Now
           </button>
         </div>
-        <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
+        <p className="mx-5 xl:mx-[33px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
         <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px] xl:w-[457px]
          bg-[#F4F6F8] h-[188px] font-[450]">
           <div className="flex justify-between border-b border-grey p-4">
@@ -64,7 +64,7 @@ const PricingReusable:React.FC<Props> = ({
             <p className="pt-2">{convenienceFee1}</p>
           </div>
         </div>
-        <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Executive Package</p>
+        <p className="mx-5 xl:mx-[33px] mt-[20px] text-[20px] font-medium">Executive Package</p>
         <div className="flex flex-col rounded-[10px] justify-between mt-[10px] mx-auto w-[318px]
         xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
           <div className="flex justify-between border-b border-grey p-4">
@@ -80,7 +80,7 @@ const PricingReusable:React.FC<Props> = ({
             <p className="pt-2">{convenienceFee2}</p>
           </div>
         </div>
-        <p className="ml-[12px] xl:ml-[30px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
+        <p className="mx-5 xl:mx-[33px] mt-[20px] text-[20px] font-medium">Deluxe Package</p>
         <div className="mb-[30px] flex flex-col rounded-[10px] justify-between mt-[10px] 
           mx-auto w-[318px] xl:w-[457px] bg-[#F4F6F8] h-[188px] font-[450]">
           <div className="flex justify-between border-b border-grey p-4">

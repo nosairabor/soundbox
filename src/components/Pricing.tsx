@@ -7,10 +7,9 @@ const Pricing = () => {
     <div className="circular-font bg-[#F4F6F8] md:bg-white">
       <div className="flex flex-col items-center justify-center h-[359px] bg-[#F4F6F8] relative">
         <h1 className=" header-gradient2 font-bold text-[34px] md:text-[50px] xl:text-[60px]">Pricing</h1>
-        <p className="z-[1] mt-[17px] font-[450] text-[18px] md:text-[20px] text-center">
+        <p className="px-2 z-[1] mt-[17px] font-[450] text-[18px] md:text-[20px] text-center">
           Now you no longer have to keep customers waiting. 
-          Soundbox<br className="hidden sm:block xl:hidden"/>
-          <br className="hidden xl:block"/> confirms payments instantly and audibly.
+          Soundbox confirms payments instantly and audibly.
         </p>
       </div>
       <div className="hidden xl:block absolute top-[81px] right-[20px] z-0">

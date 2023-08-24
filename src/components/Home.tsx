@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import HowItWorks from "./HowItWorks";
+import {BiSolidRightArrow} from "react-icons/bi"
 
 const Home = () => {
   
@@ -17,64 +18,63 @@ const Home = () => {
   const [refD, inViewD] = useInView({
 
   });
-  // const [refB, inViewB] = useInView({
-    
-  // });
-  // const [isAnimatedB, setIsAnimatedB] = useState(false);
+  const [refE, inViewE] = useInView({
+
+  });
+  const [refF, inViewF] = useInView({
+
+  })
+  const [refG, inViewG] = useInView({
+
+  })
   
-  // useEffect(() => {
-    
-  //   if (inViewB || isAnimatedB ) {
-  //     setIsAnimatedB(true);
-  //   }
-  // }, [inViewB, isAnimatedB]);
   return (
     <div className="circular-font mx-auto">
-      <section className="flex items-center justify-center md:gap-[50px]">
-        <div className="flex mt-[70px] flex-col justify-center ml-0 md:ml-[40px]   mt-[178px]">
+      <section className="mt-[60px] lg:mt-[60px] flex flex-col lg:flex-row items-center justify-center px-[30px] lg:px-[60px] xl:px-[105px]">
+        <div className="">
           <div
             ref={refC} 
-            className={`text-[44px] md:mt-[30px] mt-0 xl:mt-0 
-             leading-[49px] xl:text-[60px] font-bold xl:leading-[75.9px]
+            className={`text-4xl lg:text-5xl xl:text-6xl 
+             leading-[49px] font-bold 
              ${inViewC?"animation-header":""}`}
           >
             <span className="header-gradient">Instant & Audible</span>
             <br />
-            Notification of
-            <br /> Payments
+            Notification of Payments
           </div>
-          <div ref={refB} className={`text-secondary mt-[30px] text-[18px] xl:mt-[40px]   xl:text-[20px]  md:ml-0 font-[450] leading-[26px] ${inViewB?"animation-header":""}`}>
+          <div ref={refB} className={`w-full  max-w-[416px] text-secondary mt-[30px] text-[18px] xl:mt-[40px]   xl:text-[20px]  md:ml-0 font-[450] leading-[26px] ${inViewB?"animation-header":""}`}>
             Now you no longer have to keep customers
-            <br /> waiting. Soundbox confirms payments
-            <br /> instantly and audibly.
+            waiting. Soundbox confirms payments
+            instantly and audibly.
           </div>
-          <div ref={refD} className={`flex space-x-[20px] text-[16px] mt-[40px] ${inViewD?"animation-header":""}`} >
+          {/******* buttons *****/}
+          <div ref={refD} className={`flex  space-x-[10px] text-[16px] mt-[40px] ${inViewD?"animation-header":""}`} >
             <div
-              className="w-[154px] h-[45px] py-2  border border-blue font-medium rounded-[100px] bg-blue 
-              text-center text-white xl:px-[20px] xl:py-[13px] xl:w-[auto] xl:h-[auto]"
+              className="h-[45px] md:text-[16px] text-[12px] md:h-[56px] px-[30px] border border-blue font-medium rounded-[100px] bg-blue 
+              text-center text-white whitespace-nowrap flex justify-center items-center"
             >
               <Link to="/pricing">Get Device Now</Link>
             </div>
             <div 
-              className="w-[185px] h-[45px] justify-center py-2 text-white space-x-2 font-medium bg-black flex border
-                border-black rounded-[100px] text-center xl:py-[13px] xl:px-[20px] xl:w-[auto] xl:h-[auto]"
+              className="whitespace-nowrap text-[12px] justify-center items-center md:text-[16px] h-[45px] md:h-[56px] px-[25px] text-white space-x-2 font-medium bg-black flex border
+                border-black rounded-[100px] text-center"
             >
               <Link to="">View Quick Demo</Link>
-              <img
-                src={require("../pictures/side-arrow.png")}
-                className="h-auto w-auto"
-                alt="View Quick Demo"
-              />
+              <div className="md:w-[25px] md:h-[25px] w-[10px] h-[10px] flex items-center justify-center  bg-white rounded-[50px] border border-white">
+                <BiSolidRightArrow className="text-black text-[6px] md:text-[10px]"/>
+              </div>
             </div>
           </div>
         </div>
+        {/* soundbox image at the hero section */}
         <div className="mt-[90px]">
           <img
-            src={require("../pictures/Vector.png")}
-            className="hidden md:block max-w-full max-w-h"
+            src="https://app.yeppay.io/static/media/ImgSoundBox.4236dfcd86c1b1607aa2.png"
+            className="h-[410px] lg:h-full object-cover lg:object-contain object-center w-full "
           />
         </div>
       </section>
+
       <div className="mt-[50px] flex md:hidden">
         <img
               src={require("../pictures/sls-mobile.png")}
@@ -83,7 +83,7 @@ const Home = () => {
       </div>
 
       <section className="flex flex-col space-y-[20px] md:justify-center 
-         md:flex-row md:space-x-4 mx-[20px]  xl:mx-[105px]   md:space-y-0
+         md:flex-row md:space-x-4 mx-[24px] md:mx-[60px]  xl:mx-[105px]   md:space-y-0
          xl:space-x-[30px] mt-[60px] "
       >
         <div 
@@ -128,65 +128,28 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mt-[100px] bg-[#F4F6F8] xl:flex sm:items-center justify-center">
-        <div className="relative  mx-2  py-[80px] flex flex-row 
-         items-center justify-center ">
-          <div className="absolute top-[73px] left-[185px] xl:left-[340px] xl:top-[70px]">
-            <img src={require("../pictures/ellipse15.png")}
-             className="h-[14px] w-[14px] xl:w-[25.48px] xl:h-[25.48px]"/>
-          </div>
-          <img
-            src={require("../pictures/sls-1.png")}
-            className="rounded-[18.2px] max-w-[200px] h-[332px]
-            w-full sm:max-w-[364px] sm:h-[604px]"
-          />
-          <div
-            className="absolute flex justify-center items-center
-            right-[65px] bottom-[95px] w-[159px] h-[54px] md:bottom-[130px] xl:right-[70px]
-              md:right-[275px]  bg-white xl:w-[289px] xl:h-[98px] rounded-[25px]"
-          >
-            <div className="bg-[#34A853] rounded-[100px] w-[32.81px] h-[32.81px] xl:w-[59px] xl:h-[59px] flex items-center justify-center">
-              <img
-                src={require("../pictures/check-circle-broken.png")}
-                className=""
-              />
-            </div>
-            <div className="flex flex-col ml-[20px]">
-              <p className="text-[10.94px] xl:text-[19.9px]">You just got paid</p>
-              <p className="text-[13.6px] xl:text-[24.8px]">N23,500</p>
-            </div>
-            <div className="absolute -right-[20px] top-[30px]  xl:-right-[25px] xl:top-[60px]">
-              <img src={require("../pictures/ellipse14.png")} alt="ellipse"
-              className="w-auto h-[44px] xl:h-[60px] " />
-            </div>
-          </div>
-          <div className="-mt-10 ml-[20px] md:ml-[40px] ">
-            <img
-              src={require("../pictures/sls-2.png")}
-              className=" rounded-[18.2px]  
-              w-auto h-auto sm:max-w-[277px] "
-            />
-          </div>
-          
+      <section className="space-y-[30px] lg:space-y-0 pt-[102px] pb-[85px] px-[50px] xl:px-[105px] mt-[100px] bg-[#F4F6F8] grid grid-cols-1 lg:grid-cols-2 sm:items-center gap-5">
+        <div className="">
+          <img src="https://app.yeppay.io/static/media/adsBanner.6b8406c7365d0446f6c9d4f148111ea6.svg" alt="SoundBoxImg" className="w-full"/>
         </div>
         
         
-        <div className="flex flex-col   md:ml-[30px]  xl:ml-[80px]">
-          <div className="self-center">
-            <h1 className="text-[32px] xl:text-[40px] font-bold
-            leading-[40px] xl:leading-[50px]">
+        <div className=" flex flex-col  md:pl-[100px] justify-self-center self-center">
+          <div className="">
+            <h1 ref={refE} className={`text-[30px] md:leading-[50.6px] md:text-[40px] font-bold
+            leading-[40px] xl:leading-[50px] ${inViewE?"animation-header":""}`}>
               Payment Received and
-              <br /> Announced, <span className="text-blue">in Seconds.</span>
+               Announced, <span className="text-blue">in Seconds.</span>
             </h1>
-            <p className="text-secondary text-[17px] xl:text-[20px] leading-[25px] 
-              xl:leading-[26px] font-[450] mt-[25px] md:mt-[15px] xl:mt-[25px]">
+            <p ref={refF} className={`text-secondary text-[16px] xl:text-[20px] leading-[25px] 
+              xl:leading-[26px] font-[450] mt-[25px] md:mt-[15px] xl:mt-[25px] ${inViewF?"animation-header":""}`}>
               Multiple transactions announced within
-              <br /> seconds. Our soundbox notifies you of your
-              <br /> customer's payments within seconds.
+              seconds. Our soundbox notifies you of your
+              customer's payments within seconds.
             </p>
-            <div
-              className=" xl:translate-x-0 mt-[25px] border border-blue rounded-[100px]
-                  text-white text-center mb-[50px] xl:mb-0 w-[180px] py-[13px] px-[20px] bg-blue font-[500]"
+            <div ref={refG}
+              className={` xl:translate-x-0 mt-[25px] border border-blue rounded-[100px]
+                  text-white text-center  w-[180px] py-[13px] px-[20px] bg-blue font-[500] ${inViewG?"animation-header":""}`}
             >
               Get Device Now
             </div>
