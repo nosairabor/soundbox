@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Accordion from "./Accordion";
+import Accordion from "../components/Accordion";
 import {GoArrowUpRight} from "react-icons/go"
 import { BsChevronDown } from "react-icons/bs";   
 import {AiFillFacebook} from "react-icons/ai"
@@ -9,12 +9,12 @@ import {AiOutlineTwitter} from "react-icons/ai"
 import {IoMail} from "react-icons/io5"
 import {AiFillYoutube} from "react-icons/ai"
 import {AiFillLinkedin} from "react-icons/ai"
-import FooterAccordion from "./FooterAccordion";
+import FooterAccordion from "../components/FooterAccordion";
 import { useLocation } from "react-router-dom";
 
-const Footer = () => {
+const SubFooter = () => {
     const [activeLink, setActiveLink] = useState<number | null>(null);//useState to color the Accordion items one at a time
-    const [isOpen, setIsOpen] = useState<boolean[]>(Array(6).fill(false));
+    const [isOpen, setIsOpen] = useState<boolean[]>(Array(7).fill(false));
     
     const handleLinkClick = (index:number) => {
         setActiveLink(index);
@@ -23,10 +23,10 @@ const Footer = () => {
             return newOpenSections;
         });
     };
-    const location = useLocation();
-    if(location.pathname === "/"){
-        return null
-    }
+    // const location = useLocation();
+    // if(location.pathname === "/"){
+    //     return null
+    // }
 
     return (
         <div className="circular-font">
@@ -174,4 +174,4 @@ const Footer = () => {
     );
 }
  
-export default Footer;
+export default SubFooter;

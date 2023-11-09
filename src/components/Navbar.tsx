@@ -65,11 +65,11 @@ const Navbar = () => {
                             Soundbox
                     </Link>
                 
-                    <div className="ml-10 -translate-y-[10px] border border-blue 
-                    rounded-[10px] text-center px-[20px] py-[10px]  text-blue">
-                        Sign in
-                    </div>
-                    <div className="ml-2 border border-blue -translate-y-[10px] rounded-[10px] bg-blue text-center text-white px-[20px] py-[10px]">Create Account</div>
+                    <button className="cursor-pointer ml-10 -translate-y-[10px] border border-blue 
+                    rounded-[10px] text-center px-[20px] py-[10px]  text-blue transition delay-75 duration-300 ease-out hover:bg-blue hover:text-white"><a target="_blank" href="https://app.yeppay.io/login">
+                        Sign in </a>
+                    </button>
+                    <button className=" cursor-pointer ml-2 border border-blue -translate-y-[10px] rounded-[10px] bg-blue text-center text-white px-[20px] py-[10px] transition delay-75 duration-300 ease-out hover:bg-white hover:text-blue"><a target="_blank" href="https://app.yeppay.io/register" >Create Account</a></button>
                 </div>
                 <div className="mt-[25px] xl:hidden" onClick={toggleHamburger}>
                     {hamburger?
