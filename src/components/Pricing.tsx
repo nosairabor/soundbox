@@ -1,11 +1,24 @@
 import HowItWorks from "./HowItWorks";
 import PricingReusable from "./PricingReusable";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Pricing = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    swipeToSlide: true,
+    fade: false,
+  };
   return (
     <div className="circular-font bg-[#F4F6F8] md:bg-white">
-      <div className="flex flex-col items-center justify-center h-[359px] bg-[#F4F6F8] relative">
+      {/* <div className="flex flex-col items-center justify-center h-[359px] bg-[#F4F6F8] relative">
         <h1 className=" header-gradient2 font-bold text-[34px] md:text-[50px] xl:text-[60px]">Pricing</h1>
         <p className="px-2 z-[1] mt-[17px] font-[450] text-[18px] md:text-[20px] text-center">
           Now you no longer have to keep customers waiting. 
@@ -68,7 +81,27 @@ const Pricing = () => {
         </div>
       </div>
 
-      <HowItWorks/>
+      <HowItWorks/> */}
+      <Slider {...settings}>
+      <div>
+        <h3>1</h3>
+      </div>
+      <div>
+        <h3>2</h3>
+      </div>
+      <div>
+        <h3>3</h3>
+      </div>
+      <div>
+        <h3>4</h3>
+      </div>
+      <div>
+        <h3>5</h3>
+      </div>
+      <div>
+        <h3>6</h3>
+      </div>
+    </Slider>
       
     </div>
   );
