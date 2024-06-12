@@ -14,7 +14,7 @@ const Pricing = () => {
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
-    fade: false,
+    
   };
   return (
     <div className="circular-font bg-[#F4F6F8] md:bg-white">
@@ -82,6 +82,7 @@ const Pricing = () => {
       </div>
 
       <HowItWorks/> */}
+      fhif
       <Slider {...settings}>
       <div>
         <h3>1</h3>
